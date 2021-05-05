@@ -21,6 +21,13 @@ a {
 	color: #3E73BB;
 }
 
+p {
+	font-family: Helvetica;
+	font-weight: lighter;
+	line-height: 1.6;
+	font-size: 20px;
+}
+
 div {
 	font-family: Helvetica;
 	font-weight: lighter;
@@ -76,6 +83,17 @@ div {
 	width: 30vw;
 }
 
+#detail {
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home {
+	color: #000;
+	text-decoration: none;
+}
+
 .project_td {
 	padding: 30px 0;
 	font-weight: 500;
@@ -92,4 +110,26 @@ div {
 .project_div {
 	font-weight: 500;
 	color: #383D40;
+}
+
+.author {
+	font-size: 20px;
+}
+
+.teaser_img {
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.caption {
+	font-family: Helvetica;
+	font-weight: lighter;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.demo {
+	width: 50vw;
+	height: 28.125vw;
 }
