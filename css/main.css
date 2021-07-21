@@ -193,6 +193,9 @@ header {
     margin: 0 10px;
     color: #7a5971;
 }
+#biography .w .head #links i:hover {
+    color: #7fd1b0;
+}
 #biography .w .bio-text {
     width: 87rem;
     float: right;
