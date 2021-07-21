@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+h1 {
+    font-size: 50px;
+    line-height: 15rem;
+    color: #191919;
+}
+.topnav {
+    width: 100%;
+    position: fixed;
+    top: 0rem;
+    height: 8rem;
+    background: #fff;
+    z-index: 2;
+}
+.w {
+    margin: 2rem auto;
+    width: 112rem;
+}
+.topnav .w .logo {
+    float: left;
+    width: 9.8rem;
+    height: 5rem;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 0px;
+}
+.topnav .w .nav {
+    float: right;
+}
+.topnav .w .nav a {
+    display: inline-block;
+    font-size: 16px;
+    margin: 1rem 0 0 2rem;
+    height: 4rem;
+    border: none;
+    color: #ccc;
+}
+.topnav .w .nav a:hover {
+    border-bottom: 2px solid black;
+    color: orange;
+}
+header {
+    overflow: hidden;
+    height: 90rem;
+}
+.header {
+    margin-top: 20rem;
+    overflow: hidden;
+}
+.header .snap {
+    float: left;
+    width: 20rem;
+    height: 48.5rem;
+}
+.header .snap .snap-img {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 12.125rem;
+    position: relative;
+}
+.header .snap .snap-img a {
+    display: inline-block;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    width: 20rem;
+    height: 12.125rem;
+    font-size: 0px;
+    font-weight: 400;
+    color: #ccc;
+    text-align: center;
+    line-height: 12.125rem;
+}
+.header .snap .snap-img .snap-mask1:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 20px;
+}
+.header .snap .snap-img .snap-mask2:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 20px;
+}
+.header .snap .snap-img .snap-mask3:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 20px;
+}
+.header .snap .snap-img .snap-mask4:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 20px;
+}
+.header .snap .snap-img .snap-image1 {
+    background: url(../images/exampleNet.png) no-repeat;
+    background-size: 22.5rem 12.125rem;
+    width: 20rem;
+    height: 12.125rem;
+}
+.header .snap .snap-img .snap-image2{
+    background: url(../images/visMeet.png) no-repeat;
+    background-size: 23.38rem 12.125rem;
+    background-position-y: 1rem;
+    width: 20rem;
+    height: 12.125rem;
+}
+.header .snap .snap-img .snap-image3 {
+    background: url(../images/apiComparison.png) no-repeat;
+    background-size: 20rem 12.125rem;
+    background-position-y: 1rem;
+    width: 20rem;
+    height: 12.125rem;
+}
+.header .snap .snap-img .snap-image4 {
+    background: url(../images/visComplex.png) no-repeat;
+    background-position-y: 3rem;
+    background-size: 20rem 9.43rem;
+    width: 20rem;
+    height: 12.125rem;
+}
+.header .headshot {
+    width: 92rem;
+    height: 48.5rem;
+    float: right;
+    position: relative;
+}
+.header .headshot .mask {
+    display: inline-block;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    width: 92rem;
+    height: 48.5rem;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.5rem;
+    color: #ccc;
+}
+.header .headshot .mask:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+}
+.header .headshot .banner {
+    width: 92rem;
+    height: 48.5rem;
+    background: url(../images/banner.png) no-repeat;
+    background-size: 112rem 48.5rem;
+    background-position: -11rem 0rem;
+}
+#biography {
+    width: 100%;
+    background: #f0f2f5;
+    height: 90rem;
+    overflow: hidden;
+}
+#biography .w .head {
+    width: 25rem;
+    float: left;
+}
+#biography .w .head #selfie {
+	width: 20rem;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#biography .w .head #bio_info {
+    box-sizing: border-box;
+    margin: 2rem auto;
+    padding: 0 2rem;
+	text-align: center;
+    line-height: 3.5rem;
+    font-size: 16px;
+}
+#biography .w .head #links {
+    margin: 2rem auto;
+    text-align: center;
+}
+#biography .w .head #links i {
+    font-size: 30px; 
+    margin: 0 10px;
+    color: #7a5971;
+}
+#biography .w .bio-text {
+    width: 87rem;
+    float: right;
+}
+.bio-text {
+    box-sizing: border-box;
+    padding: 0 10rem;
+}
+.bio-text .intro-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7a5971;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 3.5rem;
+}
+.bio-text .intro-text a {
+    color: #7fd1b0;
+}
+#publi {
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+#publi .w .research {
+    height: 20rem;
+}
+#publi .w .research .research-img {
+    float: left;
+	min-width: 25rem;
+	display: block;
+    position: relative;
+}
+#publi .w .research .research-img a {
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    width: 25rem;
+    height: 15rem;
+    font-size: 0px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 15rem;
+}
+#publi .w .research .research-img a:hover {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 20px;
+}
+#publi .w .research .research-img #examplenet {
+    background: url(../images/exampleNet.png) no-repeat;
+    background-size: 25rem 15rem;
+    width: 25rem;
+    height: 15rem;
+}
+#publi .w .research .project_div {
+    box-sizing: border-box;
+    padding: 0 10rem;
+    float: right;
+    width: 87rem;
+	font-weight: 500;
+	color: #383D40;
+}
+#publi .w .research .project_div .paper_title {
+	color: #22233d;
+	text-decoration: none;
+	font-size: 25px;
+    line-height: 5rem;
+}
+#publi .w .research .project_div .paper_title:hover {
+    color: #7fd1b0;
+}
+#publi .w .research .project_div .award {
+	display: inline;
+	color: #96A2DF;
+	font-family: Helvetica;
+	line-height: 3.5rem;
+	font-size: 20px;
+}
+#publi .w .research .project_div>i, #publi .w .research .project_div>a {
+    font-size: 16px;
+    color: #7a5971;
+    line-height: 2.5rem;
+}
+#publi .w .research .project_div p {
+    font-size: 16px;
+    line-height: 2.5rem;
+}
+#publi .w .research .project_div .a-aut {
+    color: #7fd1b0;
+}
+#news{
+    overflow: hidden;
+    height: 66rem;
+    background-color: #f9f9f9;
+}
+#news .w .arti {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+#news .w .arti .article {
+    width: 25.5rem;
+    height: 43rem;
+    background-color: #fff;
+    margin: 2.5rem 3rem 0 0;
+    position: relative;
+}
+#news .w .arti .article>a {
+    display: inline-block;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    width: 25.5rem;
+    height: 15rem;
+    font-size: 0px;
+    font-weight: 400;
+    color: #ccc;
+    text-align: center;
+    line-height: 15rem;
+}
+#news .w .arti .article>a:hover {
+    background: rgba(0,0,0,0.7);
+    font-size: 20px;
+}
+#news .w .arti .article img {
+    width: 25.5rem;
+    height: 15rem;
+}
+#news .w .arti .article .aut {
+    font-size: 10px;
+    margin: 1rem auto auto 3rem;
+    line-height: 2.5rem;
+}
+#news .w .arti .article h4 {
+    margin: auto 3rem;
+    font-size: 16px;
+    color: #22233d;
+    line-height: 2rem;
+    font-weight: 100;
+}
+#news .w .arti .article h4:hover {
+    color: #7fd1b0;
+}
+#news .w .arti .article .words {
+    margin: 1rem 3rem auto 3rem;
+    font-size: 14px;
+    line-height: 2rem;
+    color: #7fd1b0;
+}
+.footer {
+    height: 9rem;
+    background-color: #22233d;
+    overflow: hidden;
+}
+.footer .w {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .w:nth-child(n) {
+    flex: 1;
+    margin-top: 3rem;
+    height: 3rem;
+}
+.footer .w .logo {
+    filter: invert(100%);
+    width: 7.9rem;
+    height: 4rem;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+.footer .w .icons .footer-icons{
+    font-size: 30px; 
+    margin: 0 10px;
+    color: #fff;
+}
+.footer .w .icons .footer-icons:hover {
+    color: orange;
+}
+.footer .w .last p {
+    float: right;
+    font-size: 14px;
+    color: #5e5e79;
+}
