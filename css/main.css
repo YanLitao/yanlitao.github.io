@@ -35,6 +35,11 @@ h1 {
     height: 5rem;
     background: url(../images/logo.png) no-repeat;
     background-size: 100% 100%;
+}
+.topnav .w .logo a{
+    display: inline-block;
+    width: 9.8rem;
+    height: 5rem;
     font-size: 0px;
 }
 .topnav .w .nav {
@@ -104,7 +109,7 @@ header {
     font-size: 20px;
 }
 .header .snap .snap-img .snap-image1 {
-    background: url(../images/exampleNet.png) no-repeat;
+    background: url(../images/examplenet/system.png) no-repeat;
     background-size: 22.5rem 12.125rem;
     width: 20rem;
     height: 12.125rem;
@@ -342,36 +347,36 @@ header {
     line-height: 2rem;
     color: #7fd1b0;
 }
-.footer {
+#footer {
     height: 9rem;
     background-color: #22233d;
     overflow: hidden;
 }
-.footer .w {
+#footer .w {
     display: flex;
     justify-content: space-between;
 }
-.footer .w:nth-child(n) {
+#footer .w:nth-child(n) {
     flex: 1;
     margin-top: 3rem;
     height: 3rem;
 }
-.footer .w .logo {
+#footer .w .logo {
     filter: invert(100%);
     width: 7.9rem;
     height: 4rem;
     background: url(../images/logo.png) no-repeat;
     background-size: 100% 100%;
 }
-.footer .w .icons .footer-icons{
+#footer .w .icons .footer-icons{
     font-size: 30px; 
     margin: 0 10px;
     color: #fff;
 }
-.footer .w .icons .footer-icons:hover {
-    color: orange;
+#footer .w .icons .footer-icons:hover {
+    color: #7fd1b0;
 }
-.footer .w .last p {
+#footer .w .last p {
     float: right;
     font-size: 14px;
     color: #5e5e79;

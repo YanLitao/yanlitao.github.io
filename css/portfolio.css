@@ -1,0 +1,371 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.def {
+    margin-top: 8rem;
+    /* background: #f0f2f5; */
+    overflow: hidden;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 8rem;
+}
+h2 {
+    margin-top: 2rem;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 8rem;
+}
+h3 {
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 7rem;
+}
+b {
+    font-size: 20px;
+    line-height: 3rem;
+
+}
+.def .w .hard {
+    width: 112rem;
+    height: 31.3rem;
+    background: url(../images/examplenet/hard.png) no-repeat;
+    background-size: 112rem 31.3rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caption {
+    font-size: 10px;
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.txt {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: #191919;
+    margin: 1rem 3rem;
+}
+.def .w .goal-img {
+    width: 112rem;
+    height: 58rem;
+    background: url(../images/examplenet/goal.png) no-repeat;
+    background-size: 112rem 58rem;
+}
+.formal {
+    overflow: hidden;
+}
+.formal .w .formal-img{
+    width: 112rem;
+    height: 21.5rem;
+    background: url(../images/examplenet/formal.png) no-repeat;
+    background-size: 112rem 21.5rem;
+}
+.formal .w .formal-people{
+    width: 112rem;
+    height: 31.5rem;
+    background: url(../images/examplenet/people.png) no-repeat;
+    background-size: 112rem 31.5rem;
+}
+.formal .w .formal-questions{
+    width: 112rem;
+    height: 60.6rem;
+    background: url(../images/examplenet/questions.png) no-repeat;
+    background-size: 112rem 60.6rem;
+    background-position-x: 1rem;
+}
+.formal .w .formal-results{
+    width: 112rem;
+    height: 43.5rem;
+    background: url(../images/examplenet/needs.png) no-repeat;
+    background-size: 112rem 43.5rem;
+}
+.design {
+    background: #f0f2f5;
+    overflow: hidden;
+}
+.design .w .flow {
+    width: 112rem;
+    overflow: hidden;
+}
+.design .w .flow .flow-img {
+    width: 60rem;
+    float: right;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3rem;
+}
+.design .w .flow .flow-img .flow1{
+    width: 60rem;
+    height: 33.5rem;
+    background: url(../images/examplenet/original_design_flow1.png);
+    background-size: 60rem 33.5rem;
+}
+.design .w .flow .flow-img .flow2 {
+    width: 60rem;
+    height: 27.9rem;
+    background: url(../images/examplenet/original_design_flow2.png);
+    background-size: 60rem 27.9rem;
+}
+.design .w .flow .flow-text {
+    float: left;
+    width: 52rem;
+    box-sizing: border-box;
+    padding: 0rem 3rem 3rem 0;
+} 
+.design .w .flow .flow-text .txt {
+    margin: 0rem 0rem 1rem 0rem;
+}
+.design-li {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 5rem;
+    color: #191919;
+    margin-left: 3rem;
+}
+.design .w .design-text {
+    width: 112rem;
+    float: left;
+    margin-top: 1rem;
+}
+.design .w .design-text .txt {
+    margin: 0rem 0rem 1rem 0rem;
+}
+.design .w .mockup-name {
+    float: left;
+    font-size: 30px;
+    line-height: 7rem;
+}
+.design .w .mockup-all {
+    width: 112rem;
+    overflow: hidden;
+    /* box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.design .w .mockup-all .one-mockup {
+    width: 112rem;
+    height: 55rem;
+}
+.design .w .mockup-all .mockup {
+    float: left;
+    width: 112rem;
+    height: 42rem;
+}
+.design .w .mockup-all .mockup .large-l {
+    float: left;
+    width: 75rem;
+    height: 42rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.design .w .mockup-all .mockup .large-r {
+    float: right;
+    width: 75rem;
+    height: 42rem;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.19);
+}
+.design .w .mockup-all .mockup .txt-r {
+    float: right;
+    width: 37rem;
+    height: 42rem;
+    box-sizing: border-box;
+    padding: 0 3rem;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: #191919;
+}
+.design .w .mockup-all .mockup .txt-r {
+    float: left;
+    width: 37rem;
+    height: 42rem;
+    box-sizing: border-box;
+    padding: 0 3rem;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: #191919;
+}
+.design .w .mockup-all .mockup .mockup1 {
+    background: url(../images/examplenet/design_A.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.design .w .mockup-all .mockup .mockup2 {
+    background: url(../images/examplenet/design_B.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.design .w .mockup-all .mockup .mockup3 {
+    background: url(../images/examplenet/design_C.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.design .w .mockup-all .mockup .mockup4 {
+    background: url(../images/examplenet/design_D.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.design .w .mockup-all .mockup .mockup5 {
+    background: url(../images/examplenet/design_E.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.design .w .mockup-all .mockup .mockup6 {
+    background: url(../images/examplenet/design_F.png) no-repeat;
+    background-size: 75rem 42rem;
+}
+.system {
+    overflow: hidden;
+}
+.system .w .system-overview {
+    width: 112rem;
+    height: 65.4rem;
+    background: url(../images/examplenet/system_dark.png) no-repeat;
+    background-size: 112rem 65.4rem;
+}
+.system .w .data {
+    width: 112rem;
+    height: 42.9rem;
+    background: url(../images/examplenet/workflow_v2.png) no-repeat;
+    background-size: 112rem 42.9rem;
+}
+.study {
+    overflow: hidden;
+}
+.study .w .study-img {
+    width: 112rem;
+    height: 21.3rem;
+    background: url(../images/examplenet/study.png) no-repeat;
+    background-size: 112rem 21.3rem;
+    background-position-x: 1rem;
+}
+.study .w .study-background {
+    width: 112rem;
+    height: 33.2rem;
+    background: url(../images/examplenet/background.png) no-repeat;
+    background-size: 112rem 33.2rem;
+}
+.study .w .study-process {
+    width: 112rem;
+    height: 30.7rem;
+    background: url(../images/examplenet/process.png) no-repeat;
+    background-size: 112rem 30.7rem;
+    background-position-x: 1rem;
+}
+.study .w .study-results {
+    width: 112rem;
+    overflow: hidden;
+}
+.study .w .study-results .result {
+    width: 112rem;
+    overflow: hidden;
+}
+.study .w .study-results .result .txt-l {
+    float: left;
+    width: 56rem;
+    height: 19rem;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19rem;
+    color: #191919;
+}
+.study .w .study-results .result .txt-r {
+    float: right;
+    width: 56rem;
+    height: 19rem;
+    text-align: right;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19rem;
+    color: #191919;
+}
+.study .w .study-results .result .hi {
+    font-size: 25px;
+    font-weight: 400;
+    color: orange;
+}
+.study .w .study-results .result .more-examples {
+    width: 56rem;
+    height: 19rem;
+    float: right;
+    background: url(../images/examplenet/more_examples.png) no-repeat;
+    background-size: 56rem 19rem;
+}
+.study .w .study-results .result .more-types {
+    width: 56rem;
+    height: 19rem;
+    float: left;
+    background: url(../images/examplenet/more_types.png) no-repeat;
+    background-size: 56rem 19rem;
+}
+.study .w .study-results .result .more-layers {
+    width: 56rem;
+    height: 19rem;
+    float: right;
+    background: url(../images/examplenet/more_layers.png) no-repeat;
+    background-size: 56rem 19rem;
+}
+.study .w .study-mistakes {
+    width: 112rem;
+    height: 43.5rem;
+    background: url(../images/examplenet/mistakes.png) no-repeat;
+    background-size: 112rem 43.5rem;
+}
+.study .w .study-feedback {
+    width: 112rem;
+}
+.study .w .study-feedback .txt-r {
+    float: right;
+    width: 56rem;
+    height: 30rem;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: #191919;
+}
+.study .w .study-feedback .txt-l {
+    float: left;
+    width: 56rem;
+    height: 30rem;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: #191919;
+}
+.study .w .confident {
+    width: 56rem;
+    height: 30rem;
+    float: left;
+    background: url(../images/examplenet/confident.png) no-repeat;
+    background-size: 56rem 30rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.study .w .useful {
+    width: 56rem;
+    height: 30rem;
+    float: left;
+    background: url(../images/examplenet/useful.png) no-repeat;
+    background-size: 56rem 30rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.study .w .mental {
+    float: left;
+    width: 56rem;
+    height: 30rem;
+    background: url(../images/examplenet/mental.png) no-repeat;
+    background-size: 56rem 30rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.video {
+    background: #f0f2f5;
+    overflow: hidden;
+    height: 45rem;
+}
+.video .w {
+    overflow: hidden;
+}
+.video .w .videos {
+    width: 112rem;
+    overflow: hidden;
+}
+.video .w .videos .v {
+    width: 37rem;
+    float: left;
+    height: 30rem;
+}
