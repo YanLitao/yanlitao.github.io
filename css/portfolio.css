@@ -2,11 +2,6 @@ html {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.def {
-    margin-top: 8rem;
-    /* background: #f0f2f5; */
-    overflow: hidden;
-}
 h1 {
     font-size: 40px;
     font-weight: 600;
@@ -28,6 +23,33 @@ b {
     font-size: 20px;
     line-height: 3rem;
 
+}
+.t {
+    margin-top: 8rem;
+    overflow: hidden;
+    background: #1f2b3e;
+    width: 100vw;
+    height: 50vw;
+    background: url(../images/examplenet/system_dark.png) no-repeat;
+    background-size: 100vw 59.4vw;
+    position: relative;
+}
+.t div {
+    position: absolute;
+    width: 100vw;
+    height: 50vw;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.t div:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.t .t-mask h1 {
+    color: #fff;
+    line-height: 50vw;
+}
+.def {
+    overflow: hidden;
 }
 .def .w .hard {
     width: 112rem;
