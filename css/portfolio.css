@@ -106,7 +106,6 @@ b {
     background-size: 112rem 43.5rem;
 }
 .design {
-    background: #f0f2f5;
     overflow: hidden;
 }
 .design .w .flow {
@@ -174,64 +173,35 @@ b {
     width: 112rem;
     height: 42rem;
 }
-.design .w .mockup-all .mockup .large-l {
+.design .w .mockup-all .mockup .large-mockup {
     float: left;
-    width: 75rem;
-    height: 42rem;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.design .w .mockup-all .mockup .large-r {
-    float: right;
-    width: 75rem;
-    height: 42rem;
-    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.19);
-}
-.design .w .mockup-all .mockup .txt-r {
-    float: right;
-    width: 37rem;
-    height: 42rem;
-    box-sizing: border-box;
-    padding: 0 3rem;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 3rem;
-    color: #191919;
-}
-.design .w .mockup-all .mockup .txt-r {
-    float: left;
-    width: 37rem;
-    height: 42rem;
-    box-sizing: border-box;
-    padding: 0 3rem;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 3rem;
-    color: #191919;
+    width: 112rem;
+    height: 43.7rem;
 }
 .design .w .mockup-all .mockup .mockup1 {
     background: url(../images/examplenet/design_A.png) no-repeat;
-    background-size: 75rem 42rem;
+    background-size: 112rem 43.7rem;
 }
 .design .w .mockup-all .mockup .mockup2 {
     background: url(../images/examplenet/design_B.png) no-repeat;
-    background-size: 75rem 42rem;
+    background-size: 112rem 43.7rem;
 }
-.design .w .mockup-all .mockup .mockup3 {
+/* .design .w .mockup-all .mockup .mockup3 {
     background: url(../images/examplenet/design_C.png) no-repeat;
     background-size: 75rem 42rem;
-}
+} */
 .design .w .mockup-all .mockup .mockup4 {
     background: url(../images/examplenet/design_D.png) no-repeat;
-    background-size: 75rem 42rem;
+    background-size: 112rem 43.7rem;
 }
 .design .w .mockup-all .mockup .mockup5 {
     background: url(../images/examplenet/design_E.png) no-repeat;
-    background-size: 75rem 42rem;
+    background-size: 112rem 43.7rem;
 }
-.design .w .mockup-all .mockup .mockup6 {
+/* .design .w .mockup-all .mockup .mockup6 {
     background: url(../images/examplenet/design_F.png) no-repeat;
     background-size: 75rem 42rem;
-}
+} */
 .system {
     overflow: hidden;
 }
