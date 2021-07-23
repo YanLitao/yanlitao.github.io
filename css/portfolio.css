@@ -65,7 +65,7 @@ b {
     line-height: 1.5rem;
 }
 .txt {
-    font-size: 18px;
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 3rem;
     color: #191919;
@@ -76,6 +76,12 @@ b {
     height: 58rem;
     background: url(../images/examplenet/goal.png) no-repeat;
     background-size: 112rem 58rem;
+}
+.def .w .compare {
+    width: 112rem;
+    height: 45rem;
+    background: url(../images/examplenet/compare.png) no-repeat;
+    background-size: 112rem 45rem;
 }
 .formal {
     overflow: hidden;
@@ -88,9 +94,9 @@ b {
 }
 .formal .w .formal-people{
     width: 112rem;
-    height: 31.5rem;
+    height: 61.6rem;
     background: url(../images/examplenet/people.png) no-repeat;
-    background-size: 112rem 31.5rem;
+    background-size: 112rem 61.6rem;
 }
 .formal .w .formal-questions{
     width: 112rem;
@@ -101,9 +107,9 @@ b {
 }
 .formal .w .formal-results{
     width: 112rem;
-    height: 43.5rem;
+    height: 52.6rem;
     background: url(../images/examplenet/needs.png) no-repeat;
-    background-size: 112rem 43.5rem;
+    background-size: 112rem 52.6rem;
 }
 .design {
     overflow: hidden;
@@ -221,6 +227,13 @@ b {
     height: 21.3rem;
     background: url(../images/examplenet/study.png) no-repeat;
     background-size: 112rem 21.3rem;
+    background-position-x: 1rem;
+}
+.study .w .study-ins {
+    width: 112rem;
+    height: 46.5rem;
+    background: url(../images/examplenet/study-instruction.png) no-repeat;
+    background-size: 112rem 46.5rem;
     background-position-x: 1rem;
 }
 .study .w .study-background {
