@@ -316,28 +316,25 @@ b {
     line-height: 3rem;
     color: #191919;
 }
-.study .w .confident {
+.study .w #confident {
     width: 56rem;
     height: 30rem;
     float: left;
-    background: url(../images/examplenet/confident.png) no-repeat;
-    background-size: 56rem 30rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.study .w .useful {
+.study .w #useful {
     width: 56rem;
     height: 30rem;
     float: left;
-    background: url(../images/examplenet/useful.png) no-repeat;
-    background-size: 56rem 30rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.study .w .mental {
+.study .w #mental {
     float: left;
     width: 56rem;
     height: 30rem;
     background: url(../images/examplenet/mental.png) no-repeat;
-    background-size: 56rem 30rem;
+    background-size: 56rem 23rem;
+    background-position-y: 3.5rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .video {
