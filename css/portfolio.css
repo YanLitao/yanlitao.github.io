@@ -171,37 +171,33 @@ b {
 .design .w .mockup-all .mockup {
     float: left;
     width: 112rem;
-    height: 42rem;
+    height: 44.4rem;
 }
 .design .w .mockup-all .mockup .large-mockup {
     float: left;
     width: 112rem;
-    height: 43.7rem;
+    height: 44.4rem;
 }
 .design .w .mockup-all .mockup .mockup1 {
     background: url(../images/examplenet/design_A.png) no-repeat;
-    background-size: 112rem 43.7rem;
+    background-size: 112rem 44.4rem;
 }
 .design .w .mockup-all .mockup .mockup2 {
     background: url(../images/examplenet/design_B.png) no-repeat;
-    background-size: 112rem 43.7rem;
+    background-size: 112rem 44.4rem;
 }
-/* .design .w .mockup-all .mockup .mockup3 {
+.design .w .mockup-all .mockup .mockup3 {
     background: url(../images/examplenet/design_C.png) no-repeat;
-    background-size: 75rem 42rem;
-} */
+    background-size: 112rem 44.4rem;
+}
 .design .w .mockup-all .mockup .mockup4 {
     background: url(../images/examplenet/design_D.png) no-repeat;
-    background-size: 112rem 43.7rem;
+    background-size: 112rem 44.4rem;
 }
 .design .w .mockup-all .mockup .mockup5 {
     background: url(../images/examplenet/design_E.png) no-repeat;
-    background-size: 112rem 43.7rem;
+    background-size: 112rem 44.4rem;
 }
-/* .design .w .mockup-all .mockup .mockup6 {
-    background: url(../images/examplenet/design_F.png) no-repeat;
-    background-size: 75rem 42rem;
-} */
 .system {
     overflow: hidden;
 }
