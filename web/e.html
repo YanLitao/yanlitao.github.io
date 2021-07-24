@@ -43,6 +43,14 @@
             </p>
             <h3>Goal</h3>
             <div class="goal-img"></div>
+            <p class="txt">
+                In this work, we present ExampleNet, a novel interactive visualization interface for exploring common and uncommon design choices, such as neural network architectures and hyperparameters, in a large collection of open-source deep learning projects. 
+            </p>
+            <h3>Related Work</h3>
+            <p class="txt">
+                Many neural network visualization tools have been proposed to support different activities in neural network development, such as TensorBoard, TensorFlow Playground, LSTMVis, etc.  
+                ExampleNet differs from these visualization tools in three perspectives:
+            </p>
             <div class="compare"></div>
         </div>
     </div>
@@ -51,12 +59,30 @@
             <h2>Formative Study</h2>
             <h3>Formative Study Overview</h3>
             <div class="formal-img"></div>
+            <p class="txt">
+                We conducted a 45-min semi-structured interview with 10 participants to understand the difficulties they faced and information needs they intended to discover when searching and designing the neural networks. 
+                These participants are all computer science or data science students that are recruited from Harvard University.
+            </p>
             <h3>Participants' Background</h3>
             <div class="formal-people"></div>
             <h3>Formative Study Questions</h3>
             <div class="formal-questions"></div>
+            <p class="txt">
+                During the interview, we encouraged participants to contextualize their answers based on their recent experience of learning and building deep learning models. 
+                I coded participants’ responses to each question and then categorized them following the card sorting method. 
+            </p>
             <h3>Formative Study Results</h3>
+            <p class="txt">
+                We found that programmers often search and adapt neural network examples on GitHub rather than building a neural network from scratch. 
+                Nine of ten participants said the first thing they would do was to search for GitHub projects that perform similar tasks on similar datasets.
+                <br>
+                I list ten information needs our participants wished to discover from GitHub examples when designing neural networks.
+            </p>
             <div class="formal-results"></div>
+            <p class="txt">
+                Participants also told us about the difficulties of discovering those information needs:
+            </p>
+            <div class="formal-difficulties"></div>
         </div>
     </div>
     <div class="design">
@@ -64,6 +90,10 @@
             <h2>
                 Designs
             </h2>
+            <p class="txt">
+                During the formative study, I also showed participants some mockups of neural network comparison tool. 
+                I collected their feedback using card sorting method.
+            </p>
             <!-- <div class="flow">
                 <div class="flow-img">
                     <div class="flow1"></div>
@@ -118,61 +148,115 @@
     </div>
     <div class="system">
         <div class="w">
+            <h2>Design Principle</h2>
+            <p class="txt">
+                I summarized three design principles based on the information needs. 
+            </p>
+            <div class="principle"></div>
             <h2>System Overview</h2>
             <h3>Final Interface Design</h3>
             <div class="system-overview"></div>
+            <p class="txt">
+                In our interface, we have four main features: 
+            </p>
+            <ul>
+                <li>
+                    The first one is a faceted browser. In the faceted browser, each facet displays the names of different datasets, tasks, and model types. 
+                    Through this faceted browser, users can quickly select and filter the corpus of DNN models and understand how frequent or infrequent each option is.
+                </li>
+                <li>
+                    The second main feature is the overview diagram of model structures, which shows the large collection of networks at scale. 
+                    In this diagram, each flow represents a model, and each node in the flow represents a layer. 
+                </li>
+                <li>
+                    The third main feature is the distribution of layer types. 
+                    It helps users understand the popular layer types used by selected projects.
+                </li>
+                <li>
+                    And the last main feature is the distribution of hyperparameters. 
+                    Users can use this feature to understand the distribution of hyperparameter values used by other programmers gives users an appropriate range as a start point. 
+                </li>
+            </ul>
             <h3>Data Curation</h3>
             <div class="data"></div>
+            <p class="txt">
+                I developed a semi-automated data curation process that extracts model characteristics from GitHub projects. 
+            </p>
+            <ul>
+                <li>
+                    In the whole-program analysis, the analyzer I implemented parsed all source code to abstract syntax trees, or ASTs. 
+                </li>
+                <li>
+                    Then, it traversed the AST of each source code file to build individual call graphs of that file. 
+                </li>
+                <li>
+                    I manually created mappings from TensorFlow API calls to neural network layers and hyperparameters. Through these mappings, our analyzer identified the TensorFlow API calls and outputted the model structures and hyperparameter settings.
+                </li>
+                <li>
+                    After the static analysis, human validators will manually validate the layer sequences, hyperparameter values, and parameter values with the source code.
+                </li>
+                <li>
+                    Except for using static analysis to generate model structures and hyperparameters. I also manually extracted meta-data, such as the dataset names, tasks, model types from the README files.
+                </li>
+            </ul>
         </div>
     </div>
     <div class="study">
         <div class="w">
             <h2>User Study</h2>
+            <p class="txt">
+                I conducted a within-subjects study with sixteen participants to evaluate whether ExampleNet could help them more effectively develop an awareness of design choices available to them when designing a deep neural network.
+            </p>
             <h3>User Study Overview</h3>
             <div class="study-img"></div>
+            <p class="txt">
+                I selected two common deep learning tasks: image classification and text classification.
+                
+                In the control condition, participants were allowed to use any search engines they were comfortable with to find online resources. 
+                In the experiment condition, participants were only allowed to use ExampleNet without any access to other online resources.
+                
+                For each task, participants were asked to design neural network architectures and hyperparameter settings.
+            </p>
             <div class="study-ins"></div>
+            <p class="txt">
+                After each task, participants were asked to rate the cognitive load of the assigned task. 
+                After finishing both tasks, participants were asked to fill out another survey to directly compare the Online Search and ExampleNet conditions. 
+            </p>
             <h3>Participants' Background</h3>
+            <p class="txt">
+                We recruited sixteen master students in Computer Science and Engineering or Data Science at Harvard University.
+                And they had diverse expertise in deep learning.
+            </p>
             <div class="study-background"></div>
             <h3>User Study Workflow</h3>
+            <p class="txt">
+                Each study took about 70 minutes. Each participant was given 20 minutes to finish each task. 
+            </p>
             <div class="study-process"></div>
             <h3>User Study Results</h3>
-            <div class="study-results">
-                <div class="result">
-                    <p class="txt-l">
-                        Participants inspected <span class="hi">3X</span> more examples
-                    </p>
-                    <div class="more-examples">
-                    </div>
-                </div>
-                <div class="result">
-                    <div class="more-types"></div>
-                    <p class="txt-r">
-                        Participants made <span class="hi">more</span> types of layers
-                    </p>
-                </div>
-                <div class="result">
-                    <p class="txt-l">
-                        Participants designed <span class="hi">deeper</span> models
-                    </p>
-                    <div class="more-layers"></div>
-                </div>
-            </div>
+            <div class="study-results"></div>
+            <p class="txt">
+                We also assessed the models they designed. 
+                We found that using ExampleNet significantly reduced participants’ mistakes in neural network design and hyperparameter design. 
+            </p>
             <div class="study-mistakes"></div>
             <h3>Participants' Feedback</h3>
+            <p class="txt">
+                I carefully collected and classified each participant's feedback. 
+                Their feedback shows that participants felt more confident about the neural network they designed with ExampleNet and rated it as more helpful than Online Search when designing neural networks. 
+                They also felt less mental demand, hurry, and frustration when using ExampleNet than online search.
+            </p>
             <div class="study-feedback">
                 <div id="confident"></div>
-                <p class="txt-r">
-                </p>
+                <div class="fb1"></div>
             </div>
             <div class="study-feedback">
-                <p class="txt-l"></p>
+                <div class="fb2"></div>
                 <div id="useful"></div>
             </div>
             <div class="study-feedback">
                 <div id="mental"></div>
-                <p class="txt-r">
-                    
-                </p>
+                <div class="fb3"></div>
             </div>
         </div>
     </div>

@@ -168,7 +168,7 @@ function draw_confident() {
             .data(data[0].values.map(function(d) { return d.rate; }).reverse())
     .enter().append("g")
             .attr("class", "legend")
-            .attr("transform", function(d,i) { return "translate(0," + i * 16 + ")"; })
+            .attr("transform", function(d,i) { return "translate(" + i * 100 + ",10)"; })
             .style("opacity","1");
 
     legend.append("rect")
@@ -184,7 +184,7 @@ function draw_confident() {
             .style("text-anchor", "start")
             .text(function(d) {return d; })
                 .style('font-family','Arial')
-                .style('font-size','14');
+                .style('font-size','12');
 
     svg.append('g')
         .attr('class', 'median')
