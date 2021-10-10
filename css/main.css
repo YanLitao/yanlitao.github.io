@@ -222,12 +222,15 @@ header .w h1>span {
 }
 .bio-text .intro-text {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #7a5971;
+    color: #383D40;
     font-size: 2rem;
     font-weight: lighter;
     line-height: 3.5rem;
 }
 .bio-text .intro-text a {
+    color: #383D40;
+}
+.bio-text .intro-text a:hover {
     color: #7fd1b0;
 }
 #publi {
@@ -298,6 +301,9 @@ header .w h1>span {
     line-height: 2.5rem;
 }
 #publi .w .research .project_div .a-aut {
+    color: #383D40;
+}
+#publi .w .research .project_div .a-aut:hover {
     color: #7fd1b0;
 }
 #news{
@@ -306,6 +312,7 @@ header .w h1>span {
     background-color: #f9f9f9;
 }
 #news .w .arti {
+    width: 112rem;
     display: flex;
     justify-content: space-between;
     float: left;
@@ -357,6 +364,84 @@ header .w h1>span {
     font-size: 1.4rem;
     line-height: 2rem;
     color: #7fd1b0;
+}
+#proj{
+    overflow: hidden;
+    height: 52.6rem;
+}
+#proj .w .projs {
+    width: 112rem;
+    float: left;
+}
+#proj .w .projs .proj {
+    float: left;
+    width: 25.5rem;
+    height: 14.3rem;
+    background-color: #fff;
+    margin: 2.5rem 3rem 0 0;
+    position: relative;
+}
+#proj .w .projs .proj:nth-child(4n) {
+    margin: 2.5rem 0 0 0;
+}
+#proj .w .projs #cdux {
+    background: url(../images/cdux.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #dbap {
+    background: url(../images/dbap.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #ews {
+    background: url(../images/ews.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #hatlas {
+    background: url(../images/hatlas.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #cstory {
+    background: url(../images/cstory.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #fdp {
+    background: url(../images/fdp.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs #bcp {
+    background: url(../images/bcp.png) no-repeat;
+    background-size: 25.5rem 14.3rem;
+    width: 25.5rem;
+    height: 14.3rem;
+}
+#proj .w .projs .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #191919;
+    width: 25.5rem;
+    height: 14.3rem;
+    opacity: 0.8;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 14.3rem;
+    font-weight: 100;
+    text-align: center;
+}
+#proj .w .projs .mask:hover {
+    opacity: 0;
 }
 #footer {
     height: 9rem;
