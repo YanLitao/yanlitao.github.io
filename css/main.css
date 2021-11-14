@@ -17,6 +17,7 @@
 }
 a {
     text-decoration: none;
+    font-weight: 600;
 }
 body {
     position: relative;
@@ -221,7 +222,7 @@ header .w h1>span {
     padding: 0 10rem;
 }
 .bio-text .intro-text {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica;
     color: #383D40;
     font-size: 2rem;
     font-weight: lighter;
@@ -229,6 +230,7 @@ header .w h1>span {
 }
 .bio-text .intro-text a {
     color: #383D40;
+    font-weight: 600;
 }
 .bio-text .intro-text a:hover {
     color: #7fd1b0;
