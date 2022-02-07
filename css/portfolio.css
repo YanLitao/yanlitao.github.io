@@ -343,9 +343,16 @@ b {
 .video .w .videos {
     width: 112rem;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .video .w .videos .v {
     width: 37rem;
     float: left;
     height: 30rem;
+}
+.video .w .videos .v h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
 }

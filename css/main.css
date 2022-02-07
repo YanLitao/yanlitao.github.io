@@ -276,12 +276,12 @@ header .w h1>span {
     width: 87rem;
 	font-weight: 500;
 	color: #383D40;
+    font-family: Helvetica;
 }
 #publi .w .research .project_div .paper_title {
 	color: #22233d;
 	text-decoration: none;
-	font-size: 2.5rem;
-    line-height: 5rem;
+	font-size: 2.0rem;
 }
 #publi .w .research .project_div .paper_title:hover {
     color: #7fd1b0;
@@ -290,20 +290,21 @@ header .w h1>span {
 	display: inline;
 	color: #96A2DF;
 	font-family: Helvetica;
-	line-height: 3.5rem;
-	font-size: 2rem;
+    line-height: 3rem;
 }
 #publi .w .research .project_div>i, #publi .w .research .project_div>a {
     font-size: 1.6rem;
-    color: #7a5971;
-    line-height: 2.5rem;
+    color: #383D40;
+    font-weight: lighter;
 }
 #publi .w .research .project_div p {
     font-size: 1.6rem;
     line-height: 2.5rem;
+    font-weight: lighter;
 }
 #publi .w .research .project_div .a-aut {
     color: #383D40;
+    font-weight: lighter;
 }
 #publi .w .research .project_div .a-aut:hover {
     color: #7fd1b0;
