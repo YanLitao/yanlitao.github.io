@@ -179,7 +179,6 @@ header .w h1>span {
 #biography {
     width: 100%;
     background: #f0f2f5;
-    height: 90rem;
     overflow: hidden;
 }
 #biography .w .head {
@@ -259,9 +258,15 @@ header .w h1>span {
     line-height: 15rem;
 }
 #publi .w .research .research-img a:hover {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
     color: #fff;
     font-size: 2rem;
+}
+#publi .w .research .research-img #paralib {
+    background: url(../images/paralib/system.png) no-repeat;
+    background-size: 25rem 15rem;
+    width: 25rem;
+    height: 15rem;
 }
 #publi .w .research .research-img #examplenet {
     background: url(../images/examplenet/system.png) no-repeat;
