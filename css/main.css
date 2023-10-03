@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
 @media only screen and (max-width: 1700px) {
     html {
         font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
+
 /* Screen size is larger than 1701px */
 @media only screen and (min-width: 1701px) {
     html {
@@ -15,18 +17,132 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .nav {
+        display: none;
+        width: 15rem;
+        float: right;
+        text-align: center;
+    }
+
+    .topnav .w .nav {
+        display: none;
+        order: 1;
+        /* Initially hide the nav on mobile */
+    }
+
+    .topnav .w .nav a {
+        display: block !important;
+    }
+
+    .topnav .w .nav.active {
+        background-color: #f9f9f9;
+        opacity: 90%;
+        display: block;
+        position: absolute;
+        top: 8rem;
+        right: 1rem;
+        /* Show nav when active */
+    }
+
+    .hamburger {
+        right: 30px;
+        display: block !important;
+        color: orange;
+        float: right;
+        font-size: 4rem !important;
+    }
+
+    .hamburger:hover {
+        color: #ccc;
+        /* Change color on hover */
+    }
+
+    .header {
+        overflow: scroll !important;
+    }
+
+    header .w>h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .header .snap {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    #biography .w .head {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #biography .w .bio-text {
+        width: 100% !important;
+        padding: 0 1rem;
+    }
+
+    #publi .w .research {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        height: auto !important;
+        padding-top: 30px !important;
+    }
+
+    #publi .w .research .research-img {
+        display: none !important;
+    }
+
+    #publi .w .research .project_div {
+        width: 100% !important;
+        padding: 0 1rem !important;
+    }
+
+    #news {
+        height: auto !important;
+    }
+
+    #news .w .arti {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 55rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    #news .w .arti .article {
+        margin: 2rem 0 0 0 !important;
+    }
+
+    #proj .w .projs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer .w {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 a {
     text-decoration: none;
     font-weight: 600;
 }
+
 body {
     position: relative;
 }
+
 h1 {
     font-size: 5rem;
     line-height: 15rem;
     color: #191919;
 }
+
 .topnav {
     width: 100%;
     position: fixed;
@@ -35,10 +151,22 @@ h1 {
     background: #fff;
     z-index: 2;
 }
-.w {
-    margin: 2rem auto;
-    width: 112rem;
+
+.hamburger {
+    margin-left: 1rem;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
 }
+
+.w {
+    max-width: 112rem;
+    width: 95%;
+    margin: 2rem auto;
+}
+
 .topnav .w .logo {
     float: left;
     width: 9.8rem;
@@ -46,55 +174,67 @@ h1 {
     background: url(../images/logo.png) no-repeat;
     background-size: 100% 100%;
 }
-.topnav .w .logo a{
+
+.topnav .w .logo a {
     display: inline-block;
     width: 9.8rem;
     height: 5rem;
     font-size: 0px;
 }
+
 .topnav .w .nav {
     float: right;
 }
+
 .topnav .w .nav a {
     display: inline-block;
     font-size: 1.6rem;
     margin: 1rem 0 0 2rem;
     height: 4rem;
     border: none;
-    color: #ccc;
-}
-.topnav .w .nav a:hover {
-    border-bottom: 0.2rem solid black;
     color: orange;
 }
+
+.topnav .w .nav a:hover {
+    border-bottom: 0.2rem solid black;
+    color: #ccc;
+}
+
 header {
     overflow: hidden;
     height: 53rem;
     background: #1f2b3e;
 }
+
 header .w {
     margin-top: 8rem;
+    width: 100% !important;
 }
+
 header .w>h1 {
     display: inline-block;
     text-align: center;
-    width: 112rem;
+    width: 100%;
     font-size: 5rem;
     font-weight: 600;
     line-height: 15rem;
     color: #fff;
 }
+
 header .w h1>span {
     color: orange;
 }
+
 .header {
     overflow: hidden;
 }
+
 .header .snap {
     float: left;
     width: 112rem;
     height: 30rem;
 }
+
 .header .snap .snap-img {
     float: left;
     box-sizing: border-box;
@@ -102,10 +242,11 @@ header .w h1>span {
     height: 30rem;
     position: relative;
 }
+
 .header .snap .snap-img a {
     display: inline-block;
     position: absolute;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     width: 28rem;
     height: 30rem;
     font-size: 0px;
@@ -114,11 +255,13 @@ header .w h1>span {
     text-align: center;
     line-height: 30rem;
 }
+
 .header .snap .snap-img a:hover {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     font-size: 2rem;
 }
+
 .header .snap .snap-img .snap-image1 {
     background: url(../images/exampleNet.png) no-repeat;
     background-position-x: -15rem;
@@ -126,13 +269,15 @@ header .w h1>span {
     width: 28rem;
     height: 30rem;
 }
-.header .snap .snap-img .snap-image2{
+
+.header .snap .snap-img .snap-image2 {
     background: url(../images/visMeet.png) no-repeat;
     background-size: 53.4rem 30rem;
     background-position-x: -15rem;
     width: 28rem;
     height: 30rem;
 }
+
 .header .snap .snap-img .snap-image3 {
     background: url(../images/apiComparison.png) no-repeat;
     background-size: 53.4rem 30rem;
@@ -140,6 +285,7 @@ header .w h1>span {
     width: 28rem;
     height: 30rem;
 }
+
 .header .snap .snap-img .snap-image4 {
     background: url(../images/visComplex.png) no-repeat;
     background-size: 53.4rem 30rem;
@@ -147,16 +293,18 @@ header .w h1>span {
     width: 28rem;
     height: 30rem;
 }
+
 .header .headshot {
     width: 92rem;
     height: 48.5rem;
     float: right;
     position: relative;
 }
+
 .header .headshot .mask {
     display: inline-block;
     position: absolute;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     width: 92rem;
     height: 48.5rem;
     text-align: center;
@@ -165,10 +313,12 @@ header .w h1>span {
     line-height: 48.5rem;
     color: #ccc;
 }
+
 .header .headshot .mask:hover {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
 }
+
 .header .headshot .banner {
     width: 92rem;
     height: 48.5rem;
@@ -176,50 +326,60 @@ header .w h1>span {
     background-size: 112rem 48.5rem;
     background-position: -11rem 0rem;
 }
+
 #biography {
     width: 100%;
     background: #f0f2f5;
     overflow: hidden;
 }
+
 #biography .w .head {
     width: 25rem;
     float: left;
 }
+
 #biography .w .head #selfie {
-	width: 20rem;
-	border-radius: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    width: 20rem;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #biography .w .head #bio_info {
     box-sizing: border-box;
     margin: 2rem auto;
     padding: 0 2rem;
-	text-align: center;
+    text-align: center;
     line-height: 3.5rem;
     font-size: 1.6rem;
 }
+
 #biography .w .head #links {
     margin: 2rem auto;
     text-align: center;
 }
+
 #biography .w .head #links i {
-    font-size: 3rem; 
+    font-size: 3rem;
     margin: 0 1rem;
     color: #7a5971;
 }
+
 #biography .w .head #links i:hover {
     color: #7fd1b0;
 }
+
 #biography .w .bio-text {
-    width: 87rem;
+    width: 83rem;
     float: right;
 }
+
 .bio-text {
     box-sizing: border-box;
     padding: 0 10rem;
 }
+
 .bio-text .intro-text {
     font-family: Helvetica;
     color: #383D40;
@@ -227,29 +387,35 @@ header .w h1>span {
     font-weight: lighter;
     line-height: 3.5rem;
 }
+
 .bio-text .intro-text a {
     color: #383D40;
     font-weight: 600;
 }
+
 .bio-text .intro-text a:hover {
     color: #7fd1b0;
 }
+
 #publi {
     overflow: hidden;
     margin-bottom: 5rem;
 }
+
 #publi .w .research {
     height: 20rem;
 }
+
 #publi .w .research .research-img {
     float: left;
-	min-width: 25rem;
-	display: block;
+    min-width: 25rem;
+    display: block;
     position: relative;
 }
+
 #publi .w .research .research-img a {
     position: absolute;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     width: 25rem;
     height: 15rem;
     font-size: 0px;
@@ -257,74 +423,89 @@ header .w h1>span {
     text-align: center;
     line-height: 15rem;
 }
+
 #publi .w .research .research-img a:hover {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     font-size: 2rem;
 }
+
 #publi .w .research .research-img #paralib {
     background: url(../images/paralib/system.png) no-repeat;
     background-size: 25rem 15rem;
     width: 25rem;
     height: 15rem;
 }
+
 #publi .w .research .research-img #examplenet {
     background: url(../images/examplenet/system.png) no-repeat;
     background-size: 25rem 15rem;
     width: 25rem;
     height: 15rem;
 }
+
 #publi .w .research .project_div {
     box-sizing: border-box;
     padding: 0 10rem;
     float: right;
-    width: 87rem;
-	font-weight: 500;
-	color: #383D40;
+    width: 83rem;
+    font-weight: 500;
+    color: #383D40;
     font-family: Helvetica;
 }
+
 #publi .w .research .project_div .paper_title {
-	color: #22233d;
-	text-decoration: none;
-	font-size: 2.0rem;
+    color: #22233d;
+    text-decoration: none;
+    font-size: 2.0rem;
 }
+
 #publi .w .research .project_div .paper_title:hover {
     color: #7fd1b0;
 }
+
 #publi .w .research .project_div .award {
-	display: inline;
-	color: #96A2DF;
-	font-family: Helvetica;
+    display: inline;
+    color: #96A2DF;
+    font-family: Helvetica;
     line-height: 3rem;
 }
-#publi .w .research .project_div>i, #publi .w .research .project_div>a {
+
+#publi .w .research .project_div>i,
+#publi .w .research .project_div>a {
     font-size: 1.6rem;
     color: #383D40;
     font-weight: lighter;
 }
+
 #publi .w .research .project_div p {
     font-size: 1.6rem;
     line-height: 2.5rem;
     font-weight: lighter;
 }
+
 #publi .w .research .project_div .a-aut {
     color: #383D40;
     font-weight: lighter;
 }
+
 #publi .w .research .project_div .a-aut:hover {
     color: #7fd1b0;
 }
-#news{
+
+#news {
     overflow: hidden;
     height: 66rem;
     background-color: #f9f9f9;
 }
+
 #news .w .arti {
     width: 112rem;
     display: flex;
     justify-content: space-between;
     float: left;
 }
+
 #news .w .arti .article {
     width: 25.5rem;
     height: 43rem;
@@ -332,10 +513,11 @@ header .w h1>span {
     margin: 2.5rem 3rem 0 0;
     position: relative;
 }
+
 #news .w .arti .article>a {
     display: inline-block;
     position: absolute;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     width: 25.5rem;
     height: 15rem;
     font-size: 0px;
@@ -344,19 +526,23 @@ header .w h1>span {
     text-align: center;
     line-height: 15rem;
 }
+
 #news .w .arti .article>a:hover {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     font-size: 2rem;
 }
+
 #news .w .arti .article img {
     width: 25.5rem;
     height: 15rem;
 }
+
 #news .w .arti .article .aut {
     font-size: 1rem;
     margin: 1rem auto auto 3rem;
     line-height: 2.5rem;
 }
+
 #news .w .arti .article h4 {
     margin: auto 3rem;
     font-size: 1.6rem;
@@ -364,23 +550,28 @@ header .w h1>span {
     line-height: 2rem;
     font-weight: 100;
 }
+
 #news .w .arti .article h4:hover {
     color: #7fd1b0;
 }
+
 #news .w .arti .article .words {
     margin: 1rem 3rem auto 3rem;
     font-size: 1.4rem;
     line-height: 2rem;
     color: #7fd1b0;
 }
-#proj{
+
+#proj {
     overflow: hidden;
     height: 52.6rem;
 }
+
 #proj .w .projs {
     width: 112rem;
     float: left;
 }
+
 #proj .w .projs .proj {
     float: left;
     width: 25.5rem;
@@ -389,51 +580,60 @@ header .w h1>span {
     margin: 2.5rem 3rem 0 0;
     position: relative;
 }
+
 #proj .w .projs .proj:nth-child(4n) {
     margin: 2.5rem 0 0 0;
 }
+
 #proj .w .projs #cdux {
     background: url(../images/cdux.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #dbap {
     background: url(../images/dbap.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #ews {
     background: url(../images/ews.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #hatlas {
     background: url(../images/hatlas.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #cstory {
     background: url(../images/cstory.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #fdp {
     background: url(../images/fdp.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs #bcp {
     background: url(../images/bcp.png) no-repeat;
     background-size: 25.5rem 14.3rem;
     width: 25.5rem;
     height: 14.3rem;
 }
+
 #proj .w .projs .mask {
     position: absolute;
     left: 0;
@@ -448,23 +648,28 @@ header .w h1>span {
     font-weight: 100;
     text-align: center;
 }
+
 #proj .w .projs .mask:hover {
     opacity: 0;
 }
+
 #footer {
     height: 9rem;
     background-color: #22233d;
     overflow: hidden;
 }
+
 #footer .w {
     display: flex;
     justify-content: space-between;
 }
+
 #footer .w:nth-child(n) {
     flex: 1;
     margin-top: 3rem;
     height: 3rem;
 }
+
 #footer .w .logo {
     filter: invert(100%);
     width: 7.9rem;
@@ -472,14 +677,17 @@ header .w h1>span {
     background: url(../images/logo.png) no-repeat;
     background-size: 100% 100%;
 }
-#footer .w .icons .footer-icons{
-    font-size: 3rem; 
+
+#footer .w .icons .footer-icons {
+    font-size: 3rem;
     margin: 0 1rem;
     color: #fff;
 }
+
 #footer .w .icons .footer-icons:hover {
     color: #7fd1b0;
 }
+
 #footer .w .last p {
     float: right;
     font-size: 1.4rem;
