@@ -415,7 +415,7 @@ header .w h1>span {
 
 #publi .w .research .research-img a {
     position: absolute;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
     width: 25rem;
     height: 15rem;
     font-size: 0px;
@@ -428,6 +428,13 @@ header .w h1>span {
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
     font-size: 2rem;
+}
+
+#publi .w .research .research-img #Ivie {
+    background: url(../images/Ivie/ivie.png) no-repeat;
+    background-size: 25rem 9.5rem;
+    width: 25rem;
+    height: 9.5rem;
 }
 
 #publi .w .research .research-img #paralib {
