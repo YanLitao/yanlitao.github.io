@@ -6,7 +6,7 @@
 @media only screen and (max-width: 1700px) {
     html {
         font-size: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
     }
 }
 
@@ -14,7 +14,7 @@
 @media only screen and (min-width: 1701px) {
     html {
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
     }
 }
 
@@ -50,7 +50,7 @@
     .hamburger {
         right: 30px;
         display: block !important;
-        color: orange;
+        color: #010106;
         float: right;
         font-size: 4rem !important;
     }
@@ -138,9 +138,10 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 15rem;
-    color: #191919;
+    font-size: 2.5rem;
+    font-family: "Lato", Arial, Helvetica;
+    line-height: 10rem;
+    color: #010106;
 }
 
 .topnav {
@@ -163,23 +164,21 @@ h1 {
 
 .w {
     max-width: 112rem;
-    width: 95%;
+    width: 75%;
     margin: 2rem auto;
 }
 
 .topnav .w .logo {
     float: left;
-    width: 9.8rem;
     height: 5rem;
-    background: url(../images/logo.png) no-repeat;
-    background-size: 100% 100%;
 }
 
 .topnav .w .logo a {
     display: inline-block;
-    width: 9.8rem;
+    font-family: 'Courier New', Courier, monospace;
     height: 5rem;
-    font-size: 0px;
+    font-size: 4rem;
+    color: #010106;
 }
 
 .topnav .w .nav {
@@ -188,22 +187,21 @@ h1 {
 
 .topnav .w .nav a {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 1rem 0 0 2rem;
-    height: 4rem;
+    height: 2rem;
     border: none;
-    color: orange;
+    color: #010106;
 }
 
 .topnav .w .nav a:hover {
-    border-bottom: 0.2rem solid black;
-    color: #ccc;
+    border-bottom: 0.2rem solid #010106;
 }
 
 header {
     overflow: hidden;
     height: 53rem;
-    background: #1f2b3e;
+    background: #010106;
 }
 
 header .w {
@@ -222,7 +220,7 @@ header .w>h1 {
 }
 
 header .w h1>span {
-    color: orange;
+    color: #010106;
 }
 
 .header {
@@ -331,10 +329,16 @@ header .w h1>span {
     width: 100%;
     background: #f0f2f5;
     overflow: hidden;
+    margin-top: 10rem;
+}
+
+#biography .w {
+    display: flex;
+    justify-content: space-between;
 }
 
 #biography .w .head {
-    width: 25rem;
+    width: 22rem;
     float: left;
 }
 
@@ -351,8 +355,8 @@ header .w h1>span {
     margin: 2rem auto;
     padding: 0 2rem;
     text-align: center;
-    line-height: 3.5rem;
-    font-size: 1.6rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 #biography .w .head #links {
@@ -361,7 +365,7 @@ header .w h1>span {
 }
 
 #biography .w .head #links i {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0 1rem;
     color: #7a5971;
 }
@@ -371,26 +375,28 @@ header .w h1>span {
 }
 
 #biography .w .bio-text {
-    width: 83rem;
+    width: 70%;
     float: right;
+    margin: auto;
 }
 
 .bio-text {
     box-sizing: border-box;
-    padding: 0 10rem;
+    padding: 0 3rem;
 }
 
 .bio-text .intro-text {
-    font-family: Helvetica;
-    color: #383D40;
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 3.5rem;
+    font-family: "Lato", Arial, Helvetica;
+    color: #010106;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.2rem;
 }
 
-.bio-text .intro-text a {
-    color: #383D40;
-    font-weight: 600;
+.bio-text .intro-text a,
+.bio-text .intro-text .bold_text {
+    color: #010106;
+    font-weight: 400;
 }
 
 .bio-text .intro-text a:hover {
@@ -403,7 +409,9 @@ header .w h1>span {
 }
 
 #publi .w .research {
-    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 #publi .w .research .research-img {
@@ -413,21 +421,8 @@ header .w h1>span {
     position: relative;
 }
 
-#publi .w .research .research-img a {
-    position: absolute;
-    background: rgba(0, 0, 0, 0);
-    width: 25rem;
-    height: 15rem;
-    font-size: 0px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 15rem;
-}
-
-#publi .w .research .research-img a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-size: 2rem;
+#publi .w .research .research-img div {
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 #publi .w .research .research-img #Ivie {
@@ -453,18 +448,19 @@ header .w h1>span {
 
 #publi .w .research .project_div {
     box-sizing: border-box;
-    padding: 0 10rem;
+    padding: 0 3rem;
     float: right;
-    width: 83rem;
+    width: 70%;
     font-weight: 500;
-    color: #383D40;
-    font-family: Helvetica;
+    color: #010106;
+    font-family: "Lato", Arial, Helvetica;
 }
 
 #publi .w .research .project_div .paper_title {
-    color: #22233d;
+    color: #010106;
     text-decoration: none;
-    font-size: 2.0rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 #publi .w .research .project_div .paper_title:hover {
@@ -474,25 +470,29 @@ header .w h1>span {
 #publi .w .research .project_div .award {
     display: inline;
     color: #96A2DF;
-    font-family: Helvetica;
+    font-family: "Lato", Arial, Helvetica;
     line-height: 3rem;
 }
 
 #publi .w .research .project_div>i,
 #publi .w .research .project_div>a {
-    font-size: 1.6rem;
-    color: #383D40;
+    font-size: 1.2rem;
+    color: #010106;
     font-weight: lighter;
 }
 
 #publi .w .research .project_div p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     font-weight: lighter;
 }
 
+#publi .w .research .project_div p b {
+    font-weight: 400;
+}
+
 #publi .w .research .project_div .a-aut {
-    color: #383D40;
+    color: #010106;
     font-weight: lighter;
 }
 
@@ -553,7 +553,7 @@ header .w h1>span {
 #news .w .arti .article h4 {
     margin: auto 3rem;
     font-size: 1.6rem;
-    color: #22233d;
+    color: #010106;
     line-height: 2rem;
     font-weight: 100;
 }
@@ -645,7 +645,7 @@ header .w h1>span {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #191919;
+    background-color: #010106;
     width: 25.5rem;
     height: 14.3rem;
     opacity: 0.8;
@@ -662,7 +662,7 @@ header .w h1>span {
 
 #footer {
     height: 9rem;
-    background-color: #22233d;
+    background-color: #010106;
     overflow: hidden;
 }
 
@@ -678,11 +678,10 @@ header .w h1>span {
 }
 
 #footer .w .logo {
-    filter: invert(100%);
-    width: 7.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
     height: 4rem;
-    background: url(../images/logo.png) no-repeat;
-    background-size: 100% 100%;
+    color: #fff;
 }
 
 #footer .w .icons .footer-icons {

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Litao Yan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -15,58 +18,31 @@
     <div class="topnav">
         <div class="w">
             <div class="logo">
-                <a href="./index.html">Litao Yan's Personal Website</a>
+                <a href="./index.html">Litao Yan</a>
             </div>
             <button class="hamburger">&#9776;</button>
             <div class="nav" id="mobileNav">
                 <a href="Litao_CV.pdf">CV</a>
                 <a href="#biography" class="bio">About</a>
-                <a href="#publi" class="intro">Publication</a>
-                <a href="#news" class="res">Portfolio</a>
-                <a href="#biography" class="ft">Contact</a>
+                <a href="#publi" class="intro">Publications</a>
+                <a href="#footer" class="ft">Contact</a>
             </div>
         </div>
     </div>
-    <header>
-        <div class="w">
-            <h1>Hi! I'm <span>Litao Yan</span></h1>
-            <div class="header">
-                <div class="snap">
-                    <div class="snap-img">
-                        <a href="./web/e.html" class="snap-mask1">ExampleNet</a>
-                        <div class="snap-image1"></div>
-                    </div>
-                    <div class="snap-img">
-                        <a href="#news" class="snap-mask2">VisMeet</a>
-                        <div class="snap-image2"></div>
-                    </div>
-                    <div class="snap-img">
-                        <a href="#news" class="snap-mask3">API Comparison</a>
-                        <div class="snap-image3"></div>
-                    </div>
-                    <div class="snap-img">
-                        <a href="#news" class="snap-mask4">Vis Complexity</a>
-                        <div class="snap-image4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <div id="biography">
         <div class="w">
-            <h1>Biography</h1>
             <div class="head">
                 <div id="photo_div">
                     <img id="selfie" src="./images/litao.png" alt="Avatar">
                 </div>
                 <div id="bio_info">
-                    <i class="fas fa-graduation-cap"> Ph.D. in CIS</i>
+                    <i class="fas fa-graduation-cap"></i> Ph.D. in CIS
                     <br>
-                    <i class="fas fa-university"> University of Pennsylvania</i>
+                    <i class="fas fa-university"></i> University of Pennsylvania
                     <br>
-                    <i class="fas fa-map-marker-alt"> Philadelphia, PA</i>
+                    <i class="fas fa-map-marker-alt"></i> Philadelphia, PA
                     <br>
-                    <i class="fas fa-envelope"> ltyan@seas.upenn.edu</i>
+                    <i class="fas fa-envelope"></i> ltyan@seas.upenn.edu
                 </div>
                 <div id="links">
                     <a href="https://github.com/YanLitao">
@@ -85,34 +61,51 @@
             </div>
             <div class="bio-text">
                 <p class="intro-text">
-                    Hello! I'm Litao Yan, currently pursuing my Ph.D. at UPenn under the guidance of
-                    <a href="https://andrewhead.info">Prof. Andrew Head</a>. My research is deeply rooted in
-                    human-AI interaction, focusing on how humans and AI can collaboratively enhance each other's
-                    capabilities. I'm particularly passionate about developing programming assistants with
-                    the power of large language models (LLMs) that can seamlessly integrate with developers' workflows,
-                    making the coding process more intuitive and efficient.
+                    I am a third-year Ph.D. student in the Department of Computer and Information Science at the
+                    University of Pennsylvania, working under the guidance of <a href="https://andrewhead.info">Prof.
+                        Andrew Head</a>.
+                    <br>
+                    <br>
+                    My research focuses on human-AI interaction and software engineering, with a focus on
+                    <b class="bold_text">using large language models (LLMs) to enhance code
+                        comprehension</b>. In projects like <a
+                        href="https://dl.acm.org/doi/full/10.1145/3613904.3642239">Ivie</a>, I investigate how AI can
+                    improve the understanding of generated code by providing lightweight explanations, particularly for
+                    APIs
+                    and programming patterns. Currently, I am working on a project that addresses
+                    difficult programmer questions and aims to create new types of <b class="bold_text">software
+                        engineering agents</b>.
+                    <br>
+                    <br>
+                    My earlier work, including <a
+                        href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">ExampleNet</a> and <a
+                        href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647">ParaLib</a>, developed visualization
+                    tools to support
+                    decision-making and workflow improvements for neural networks and programming environments.
+                    <br>
+                    <br>
+                    Prior to my Ph.D. studies, I completed my master's in Computational Science and Engineering from
+                    Harvard University, where I began exploring human-computer interaction
+                    (HCI) for developers.
                 </p>
             </div>
         </div>
     </div>
     <div id="publi">
         <div class="w">
-            <h1>Publication</h1>
+            <h1>Publications</h1>
             <div class="research">
                 <div class="research-img">
-                    <a href="" class="mask-research">
-                        Learn More
-                    </a>
                     <div id="Ivie"></div>
                 </div>
                 <div class="project_div">
                     <h4>
-                        <a class="paper_title" href="">
+                        <a class="paper_title" href="https://dl.acm.org/doi/full/10.1145/3613904.3642239">
                             Ivie: Lightweight Anchored Explanations of Just-Generated Code
                         </a>
                     </h4>
                     <p>
-                        <i>Litao Yan</i>, <a href="https://alyssahwang.com" class="a-aut">Alyssa Hwang</a>, Zhiyuan Wu,
+                        <b>Litao Yan</b>, <a href="https://alyssahwang.com" class="a-aut">Alyssa Hwang</a>, Zhiyuan Wu,
                         <a href="https://andrewhead.info" class="a-aut">Andrew Head</a>
                         <br>
                         CHI'24
@@ -121,23 +114,22 @@
                     <br>
                     <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
                     <a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642239">PDF</a>&nbsp&nbsp&nbsp
+                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
+                    <a href="https://youtu.be/QPTtC92kr08?si=kbRCZB92ns2r7_Da">Video</a>&nbsp&nbsp&nbsp
                 </div>
             </div>
             <div class="research">
                 <div class="research-img">
-                    <a href="" class="mask-research">
-                        Learn More
-                    </a>
                     <div id="paralib"></div>
                 </div>
                 <div class="project_div">
                     <h4>
-                        <a class="paper_title" href="">
+                        <a class="paper_title" href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647">
                             Concept-Annotated Examples for Library Comparison
                         </a>
                     </h4>
                     <p>
-                        <i>Litao Yan</i>, <a href="http://web.cs.ucla.edu/~miryung/" class="a-aut">Miryung Kim</a>, <a
+                        <b>Litao Yan</b>, <a href="http://web.cs.ucla.edu/~miryung/" class="a-aut">Miryung Kim</a>, <a
                             href="https://people.eecs.berkeley.edu/~bjoern/" class="a-aut">Björn Hartmann</a>, <a
                             href="https://tianyi-zhang.github.io" class="a-aut">Tianyi Zhang</a>, <a
                             href="https://glassmanlab.seas.harvard.edu" class="a-aut">Elena Glassman</a>
@@ -148,25 +140,24 @@
                     <br>
                     <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
                     <a href="./papers/paralib.pdf">PDF</a>&nbsp&nbsp&nbsp
+                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
+                    <a href="https://youtu.be/IAwxNB9qHbg?si=5nouuPZPwRcWVwuk">Video</a>&nbsp&nbsp&nbsp
                 </div>
             </div>
             <div class="research">
                 <div class="research-img">
-                    <a href="./web/ExampleNet.html" class="mask-research">
-                        Learn More
-                    </a>
                     <div id="examplenet"></div>
                 </div>
                 <div class="project_div">
                     <h4>
-                        <a class="paper_title" href="./web/ExampleNet.html">
+                        <a class="paper_title" href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">
                             Visualizing Examples of Deep Neural Networks at Scale
                         </a>
                     </h4>
                     <i class="fas fa-award" style="color: #96A2DF; font-size: 20px;"></i>
                     <p class="award"> CHI 2021 Honorable Mention</p>
                     <p>
-                        <i>Litao Yan</i>, <a href="https://glassmanlab.seas.harvard.edu" class="a-aut">Elena
+                        <b>Litao Yan</b>, <a href="https://glassmanlab.seas.harvard.edu" class="a-aut">Elena
                             Glassman</a>, <a href="https://tianyi-zhang.github.io" class="a-aut">Tianyi Zhang</a>
                         <br>
                         CHI'21
@@ -175,113 +166,10 @@
                     <br>
                     <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
                     <a href="./papers/exampleNet.pdf">PDF</a>&nbsp&nbsp&nbsp
+                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
+                    <a href="https://youtu.be/kU8cBy-0z7Q?si=UqPh1PLJxpaMg1RR">Video</a>&nbsp&nbsp&nbsp
                     <i class="fas fa-file-powerpoint" style="color: #3E73BB;"></i>
                     <a href="./other/CHI2021_ExampleNet.pdf">Slides</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="news">
-        <div class="w">
-            <h1>
-                Research Projects
-            </h1>
-            <div class="arti">
-                <div class="article">
-                    <a href="#" class="mask-news1">Ivie</a>
-                    <img src="./images/Ivie/ivie.png" alt="">
-                    <p class="aut">Penn HCI</p>
-                    <h4>
-                        Ivie: Lightweight Anchored Explanations of Just-Generated Code
-                    </h4>
-                    <p class="words">
-                        I developed a tool that instantly offers anchored explanations for generated code.
-                        My first author paper is publiched at CHI 2024.
-                    </p>
-                </div>
-                <div class="article">
-                    <a href="./web/e.html" class="mask-news2">Learn More</a>
-                    <img src="./images/exampleNet.png" alt="">
-                    <p class="aut">Harvard Glassman Lab</p>
-                    <h4>
-                        Visualizing Examples of Deep Neural Networks at Scale
-                    </h4>
-                    <p class="words">
-                        The ExampleNet is an interactive interface to explore various neural network design decisions. I
-                        conducted a within-subject study that proves the usefulness of ExampleNet.
-                    </p>
-                </div>
-                <div class="article">
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647" class="mask-news3">
-                        Learn More
-                    </a>
-                    <img src="./images/apiComparison.png" alt="">
-                    <p class="aut">Harvard Glassman Lab, UC Berkeley EECS</p>
-                    <h4>
-                        Comparing Programming Libraries through Examples with Concept Labels
-                    </h4>
-                    <p class="words">
-                        Developed LibComp—an interactive user interface with concept hierarchy and labeled code examples
-                        to help developers compare the expressiveness and code complexity of multiple libraries.
-                    </p>
-                </div>
-
-                <div class="article">
-                    <a href="#" class="mask-news4">Prior Research</a>
-                    <img src="./images/visMeet.png" alt="">
-                    <p class="aut">MIT CSAIL</p>
-                    <h4>
-                        VisMeet: Data-Enhanced Video Conferencing
-                    </h4>
-                    <p class="words">
-                        VisMeet presents the interactive visualizations of the implicit online meeting data with the
-                        users. The between-subject study I conducted shows the effectiveness of it in building users'
-                        awareness of the meeting in a short time.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="proj">
-        <div class="w">
-            <h1>
-                Other Projects
-            </h1>
-            <div class="projs">
-                <div class="proj" id="cdux">
-                    <a href="https://github.com/YanLitao/Drone_Cracks" class="mask">
-                        Crack Detection UX Design Challenge
-                    </a>
-                </div>
-                <div class="proj" id="dbap">
-                    <a href="https://github.com/RockyRockyYang/drugBindings" class="mask">
-                        Drug-target Binding Affinity Prediction
-                    </a>
-                </div>
-                <div class="proj" id="ews">
-                    <a href="https://github.com/YanLitao/Elastic_Wave" class="mask">
-                        Elastic Wave Simulation
-                    </a>
-                </div>
-                <div class="proj" id="hatlas">
-                    <a href="https://yanlitao.github.io/Hazard-Altas/" class="mask">
-                        Hazard-Atlas
-                    </a>
-                </div>
-                <div class="proj" id="cstory">
-                    <a href="https://yanlitao.github.io/Chinatown-Story/" class="mask">
-                        Chinatown Story
-                    </a>
-                </div>
-                <div class="proj" id="fdp">
-                    <a href="https://yanlitao.github.io/fastDP/" class="mask">
-                        FastDP
-                    </a>
-                </div>
-                <div class="proj" id="bcp">
-                    <a href="https://sites.google.com/g.harvard.edu/bostoncrime/home" class="mask">
-                        Boston Crime Prediction
-                    </a>
                 </div>
             </div>
         </div>
@@ -289,6 +177,7 @@
     <div id="footer">
         <div class="w">
             <div class="logo">
+                Litao Yan
             </div>
             <div class="icons">
                 <a href="https://github.com/YanLitao">
@@ -303,9 +192,6 @@
                 <a href="https://twitter.com/litao_yan">
                     <i class="footer-icons fab fa-twitter-square"></i>
                 </a>
-            </div>
-            <div class="last">
-                <p>© Litao Yan. All Rights Reserved</p>
             </div>
         </div>
     </div>
@@ -332,8 +218,6 @@
             nav.classList.remove('active');
         }
     });
-
-
 </script>
 
 </html>
