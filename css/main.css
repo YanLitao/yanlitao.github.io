@@ -139,7 +139,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    font-family: "Lato", Arial, Helvetica;
+    font-family: 'Menlo', 'Lato';
     line-height: 10rem;
     color: #010106;
 }
@@ -175,7 +175,7 @@ h1 {
 
 .topnav .w .logo a {
     display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Menlo', 'Lato';
     height: 5rem;
     font-size: 4rem;
     color: #010106;
@@ -192,6 +192,7 @@ h1 {
     height: 2rem;
     border: none;
     color: #010106;
+    font-family: 'Menlo', 'Lato';
 }
 
 .topnav .w .nav a:hover {
@@ -357,6 +358,7 @@ header .w h1>span {
     text-align: center;
     line-height: 2rem;
     font-size: 1.2rem;
+    font-family: 'Menlo', 'Lato';
 }
 
 #biography .w .head #links {
@@ -673,19 +675,17 @@ header .w h1>span {
 
 #footer .w:nth-child(n) {
     flex: 1;
-    margin-top: 3rem;
-    height: 3rem;
 }
 
 #footer .w .logo {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Menlo', 'Lato';
     font-size: 4rem;
     height: 4rem;
     color: #fff;
 }
 
 #footer .w .icons .footer-icons {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 1rem;
     color: #fff;
 }
