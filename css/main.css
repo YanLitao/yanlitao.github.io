@@ -428,6 +428,27 @@ header .w h1>span {
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+#publi .w .research .research-img #freeform {
+    background: url(../images/freeform/freeform.png) no-repeat;
+    background-size: 25rem 9.45rem;
+    width: 25rem;
+    height: 9.45rem;
+}
+
+#publi .w .research .research-img #trailblazer {
+    background: url(../images/trailblazer/teaser.pdf) no-repeat;
+    background-size: 25rem 7.66rem;
+    width: 25rem;
+    height: 7.66rem;
+}
+
+#publi .w .research .research-img #invisiblementor {
+    background: url(../images/invisiblementor/teaser.pdf) no-repeat;
+    background-size: 25rem 13.16rem;
+    width: 25rem;
+    height: 13.16rem;
+}
+
 #publi .w .research .research-img #Ivie {
     background: url(../images/Ivie/ivie.png) no-repeat;
     background-size: 25rem 10.65rem;
