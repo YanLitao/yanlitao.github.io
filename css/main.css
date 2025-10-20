@@ -80,6 +80,11 @@ html {
         justify-content: center;
     }
 
+    #biography .w {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
     #biography .w .head {
         width: 100% !important;
         text-align: center;
@@ -88,6 +93,7 @@ html {
     #biography .w .bio-text {
         width: 100% !important;
         padding: 0 1rem;
+        margin: 0 !important;
     }
 
     #publi .w .research {
@@ -143,10 +149,13 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-family: 'Menlo', 'Lato';
-    line-height: 10rem;
-    color: #010106;
+    font-size: 3.2rem;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin-bottom: 4rem;
+    letter-spacing: -0.02em;
 }
 
 .topnav {
@@ -335,13 +344,20 @@ header .w h1>span {
 
 #biography {
     width: 100%;
-    background: #f0f2f5;
+    background: #fafbfc;
     overflow: hidden;
+    padding: 4rem 0;
+}
+
+#biography .w {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
 }
 
 #biography .w .head {
-    width: 22rem;
-    float: left;
+    width: 28rem;
+    flex-shrink: 0;
 }
 
 #biography .w .head #selfie {
@@ -378,32 +394,39 @@ header .w h1>span {
 }
 
 #biography .w .bio-text {
-    width: 70%;
-    float: right;
+    flex: 1;
     margin: 3rem auto;
 }
 
 .bio-text {
     box-sizing: border-box;
-    padding: 0 3rem;
+    padding: 0;
 }
 
 .bio-text .intro-text {
-    font-family: "Lato", Arial, Helvetica;
-    color: #010106;
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 2.2rem;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #2c3e50;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 65ch;
 }
 
 .bio-text .intro-text a,
 .bio-text .intro-text .bold_text {
-    color: #010106;
-    font-weight: 400;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.bio-text .intro-text a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
 }
 
 .bio-text .intro-text a:hover {
-    color: #7fd1b0;
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
 }
 
 #publi {
@@ -413,82 +436,106 @@ header .w h1>span {
 
 #publi .w .research {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
 }
 
 #publi .w .research .research-img {
-    float: left;
-    min-width: 25rem;
+    flex-shrink: 0;
+    width: 28rem;
     display: block;
     position: relative;
 }
 
 #publi .w .research .research-img div {
-    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+#publi .w .research .research-img div:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 #publi .w .research .research-img #freeform {
     background: url(../images/freeform/freeform.png) no-repeat;
-    background-size: 25rem 9.45rem;
-    width: 25rem;
-    height: 9.45rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .research-img #trailblazer {
     background: url(../images/trailblazer/teaser.pdf) no-repeat;
-    background-size: 25rem 7.66rem;
-    width: 25rem;
-    height: 7.66rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .research-img #invisiblementor {
     background: url(../images/invisiblementor/teaser.pdf) no-repeat;
-    background-size: 25rem 13.16rem;
-    width: 25rem;
-    height: 13.16rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .research-img #Ivie {
     background: url(../images/Ivie/ivie.png) no-repeat;
-    background-size: 25rem 10.65rem;
-    width: 25rem;
-    height: 10.65rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .research-img #paralib {
     background: url(../images/paralib/system.png) no-repeat;
-    background-size: 25rem 15rem;
-    width: 25rem;
-    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .research-img #examplenet {
     background: url(../images/examplenet/system.png) no-repeat;
-    background-size: 25rem 15rem;
-    width: 25rem;
-    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 11rem;
+    border-radius: 12px;
 }
 
 #publi .w .research .project_div {
-    box-sizing: border-box;
-    padding: 0 3rem;
-    float: right;
-    width: 70%;
-    font-weight: 500;
-    color: #010106;
-    font-family: "Lato", Arial, Helvetica;
+    flex: 1;
+    padding: 0;
+    font-weight: 400;
+    color: #2c3e50;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
 }
 
 #publi .w .research .project_div .paper_title {
-    color: #010106;
+    color: #1a1a1a;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.2s ease;
 }
 
 #publi .w .research .project_div .paper_title:hover {
-    color: #7fd1b0;
+    color: #3b82f6;
 }
 
 #publi .w .research .project_div .award {
@@ -500,15 +547,16 @@ header .w h1>span {
 
 #publi .w .research .project_div>i,
 #publi .w .research .project_div>a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #010106;
     font-weight: lighter;
 }
 
 #publi .w .research .project_div p {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    font-weight: lighter;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #4a5568;
 }
 
 #publi .w .research .project_div p b {
@@ -516,12 +564,14 @@ header .w h1>span {
 }
 
 #publi .w .research .project_div .a-aut {
-    color: #010106;
-    font-weight: lighter;
+    color: #4a5568;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 #publi .w .research .project_div .a-aut:hover {
-    color: #7fd1b0;
+    color: #3b82f6;
 }
 
 #news {
