@@ -1,285 +1,653 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Litao Yan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Litao Yan</title>
+  <meta name="description"
+    content="Litao Yan is a Ph.D. candidate at the University of Pennsylvania working on AI agents, agentic systems, developer tools, and AI evaluation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --ink: #242424;
+      --muted: #6f7378;
+      --blue: #315a7d;
+      --blue-hover: #23445f;
+      --rule: #ececea;
+      --bg: #fff;
+      --max: 980px;
+      --left-col: 210px;
+      --col-gap: 32px
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0 !important;
+      background: var(--bg) !important;
+      color: var(--ink) !important;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      font-size: 16px !important;
+      line-height: 1.68 !important;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color .15s ease
+    }
+
+    a:hover {
+      color: var(--blue-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px
+    }
+
+    .site {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto
+    }
+
+    header {
+      padding: 34px 0 18px;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .header-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px
+    }
+
+    .name {
+      font-size: 31px;
+      font-weight: 600;
+      letter-spacing: -.025em;
+      color: var(--ink);
+      line-height: 1.1
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap
+    }
+
+    nav a {
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 500
+    }
+
+    nav a:hover {
+      color: var(--ink);
+      text-decoration: none
+    }
+
+    main {
+      padding: 46px 0 72px
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: var(--left-col) minmax(0, 1fr);
+      column-gap: var(--col-gap);
+      align-items: start
+    }
+
+    .portrait {
+      width: 210px;
+      height: 210px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block
+    }
+
+    .hello {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -.018em;
+      margin: 0 0 14px;
+      line-height: 1.25
+    }
+
+    .bio p {
+      margin: 0 0 15px
+    }
+
+    .bio strong {
+      font-weight: 600
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      font-size: 15px
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted)
+    }
+
+    .links a:hover {
+      color: var(--blue);
+      text-decoration: none
+    }
+
+    section {
+      margin-top: 46px
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -.018em;
+      margin: 0 0 20px;
+      line-height: 1.2
+    }
+
+    .news {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      column-gap: 18px;
+      row-gap: 8px;
+      max-width: 820px;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .news time {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+      padding-right: 2px
+    }
+
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 34px
+    }
+
+    .pub {
+      display: grid !important;
+      grid-template-columns: var(--left-col) minmax(0, 1fr) !important;
+      gap: var(--col-gap) !important;
+      align-items: start !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      min-height: 0 !important;
+      width: auto !important
+    }
+
+    .thumb {
+      width: 210px !important;
+      height: 132px !important;
+      border-radius: 5px !important;
+      overflow: hidden !important;
+      background: #f4f5f6 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      position: static !important
+    }
+
+    .thumb>div {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      position: static !important;
+      border-radius: 0 !important
+    }
+
+    #execution-digests {
+      background-image: url(./images/execution_digests/interface.jpg)
+    }
+
+    #invisiblementor {
+      background-image: url(./images/invisiblementor/teaser.pdf)
+    }
+
+    #trailblazer {
+      background-image: url(./images/trailblazer/teaser.pdf)
+    }
+
+    #freeform {
+      background-image: url(./images/freeform/freeform.png)
+    }
+
+    #Ivie {
+      background-image: url(./images/Ivie/ivie.png)
+    }
+
+    #paralib {
+      background-image: url(./images/paralib/system.png)
+    }
+
+    #examplenet {
+      background-image: url(./images/examplenet/system.png)
+    }
+
+    .pub.no-thumb {
+      grid-template-columns: var(--left-col) minmax(0, 1fr) !important;
+      padding-bottom: 2px !important
+    }
+
+    .pub.no-thumb::before {
+      content: "";
+      display: block;
+      width: var(--left-col);
+      height: 1px
+    }
+
+    .pub-body {
+      min-width: 0;
+      padding-top: 1px
+    }
+
+    .pub-title {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.32;
+      margin: 0 0 6px;
+      color: var(--ink)
+    }
+
+    .pub-title a {
+      color: var(--ink)
+    }
+
+    .pub-title a:hover {
+      color: var(--blue);
+      text-decoration: none
+    }
+
+    .authors {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.45;
+      margin: 0 0 3px
+    }
+
+    .authors strong {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    .venue {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+      font-weight: 500;
+      display: inline
+    }
+
+    .paper-links {
+      display: inline-flex;
+      gap: 10px;
+      font-size: 14px;
+      margin-left: 7px
+    }
+
+    .paper-links::before {
+      content: "·";
+      color: var(--muted);
+      margin-right: 1px
+    }
+
+    .paper-links a {
+      font-weight: 500
+    }
+
+    .award {
+      font-size: 13px;
+      color: #765c13;
+      margin: 0 0 5px;
+      font-weight: 600
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 24px 0 38px;
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    @media(max-width:700px) {
+      .site {
+        width: min(100% - 30px, var(--max))
+      }
+
+      header {
+        padding-top: 28px
+      }
+
+      .header-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px
+      }
+
+      .name {
+        font-size: 29px
+      }
+
+      nav {
+        gap: 17px
+      }
+
+      main {
+        padding-top: 36px
+      }
+
+      .intro {
+        grid-template-columns: 120px 1fr;
+        gap: 24px
+      }
+
+      .portrait {
+        width: 120px;
+        height: 120px;
+        aspect-ratio: 1/1
+      }
+
+      .hello {
+        font-size: 22px
+      }
+
+      .bio {
+        font-size: 16px
+      }
+
+      .links {
+        grid-column: 1/-1;
+        margin-top: 4px
+      }
+
+      .pub {
+        grid-template-columns: 150px minmax(0, 1fr) !important;
+        gap: 20px !important
+      }
+
+      .thumb {
+        width: 150px !important;
+        height: 94px !important
+      }
+
+      .pub-title {
+        font-size: 17px
+      }
+
+      .news {
+        grid-template-columns: 150px minmax(0, 1fr);
+        column-gap: 20px
+      }
+
+      .news time {
+        text-align: right
+      }
+    }
+
+    @media(max-width:500px) {
+      .intro {
+        grid-template-columns: 1fr
+      }
+
+      .portrait {
+        width: 128px;
+        height: 128px;
+        aspect-ratio: 1/1
+      }
+
+      .pub {
+        grid-template-columns: 1fr !important
+      }
+
+      .pub.no-thumb {
+        grid-template-columns: 1fr !important
+      }
+
+      .pub.no-thumb::before {
+        display: none
+      }
+
+      .thumb {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/10
+      }
+
+      .news {
+        grid-template-columns: 1fr;
+        row-gap: 2px
+      }
+
+      .news time {
+        margin-top: 8px
+      }
+    }
+  </style>
+
+  <style>
+    /* Final layout refinement: strong grid for bio/publications, compact News. */
+    @media (min-width: 721px) {
+      .intro {
+        grid-template-columns: 210px minmax(0, 1fr) !important;
+        column-gap: 32px !important;
+      }
+
+      .portrait,
+      .intro-photo,
+      .intro-photo img {
+        width: 210px !important;
+        max-width: 210px !important;
+      }
+
+      .pub,
+      .publication,
+      .pub-row {
+        grid-template-columns: 210px minmax(0, 1fr) !important;
+        column-gap: 32px !important;
+      }
+
+      .pub-thumb,
+      .publication-thumb {
+        width: 210px !important;
+      }
+
+      .news {
+        grid-template-columns: 82px minmax(0, 1fr) !important;
+        column-gap: 18px !important;
+        max-width: 820px !important;
+      }
+
+      .news-date {
+        text-align: left !important;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
-    <div class="topnav">
-        <div class="w">
-            <div class="logo">
-                <a href="./index.html">Litao Yan</a>
-            </div>
-            <button class="hamburger">&#9776;</button>
-            <div class="nav" id="mobileNav">
-                <a href="Litao_Yan_CV.pdf">CV</a>
-                <a href="#biography" class="bio">About</a>
-                <a href="#publi" class="intro">Publications</a>
-                <a href="#footer" class="ft">Contact</a>
-            </div>
-        </div>
+  <header>
+    <div class="site header-row">
+      <div class="name">Litao Yan</div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="Litao_Yan_CV.pdf">CV</a>
+        <a href="Litao_Yan_Resume.pdf">Resume</a>
+      </nav>
     </div>
-    <div style="height: 8rem;"></div>
-    <div id="biography">
-        <div class="w">
-            <div class="head">
-                <div id="photo_div">
-                    <img id="selfie" src="./images/litao.png" alt="Avatar">
-                </div>
-                <div id="bio_info">
-                    <i class="fas fa-graduation-cap"></i> Ph.D. student in CIS
-                    <br>
-                    <i class="fas fa-university"></i> University of Pennsylvania
-                    <br>
-                    <i class="fas fa-map-marker-alt"></i> Philadelphia, PA
-                    <br>
-                    <i class="fas fa-envelope"></i> ltyan@seas.upenn.edu
-                </div>
-                <div id="links">
-                    <a href="https://github.com/YanLitao">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=b3GRi9kAAAAJ">
-                        <i class="ai ai-google-scholar-square ai-3x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/litao-yan">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com/litao_yan">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="bio-text">
-                <p class="intro-text">
-                    I am a fourth-year Ph.D. student in Computer and Information Science at the
-                    University of Pennsylvania, advised by <a href="https://andrewhead.info">Prof. Andrew Head</a>.
-                    <br><br>
-                    My research bridges human-AI interaction and software engineering, focusing on
-                    <b class="bold_text">AI-powered programming assistants</b> that answer complex developer questions
-                    and enhance code understanding.
-                    <br><br>
-                    I design intelligent systems that combine <b class="bold_text">large language models,
-                        vision-language models, and agent-based analysis</b>. My recent work includes <a
-                        href="https://dl.acm.org/doi/full/10.1145/3746059.3747652">Trailblazer</a>, which uses
-                    intelligent agents to trace program flow and explain behavior inside the IDE;
-                    <a href="https://arxiv.org/pdf/2509.26557">InvisibleMentor</a>, developed during my internship at
-                    Microsoft Research's <a href="https://www.microsoft.com/en-us/research/group/prose/">PROSE team</a>,
-                    which uses VLMs to infer user actions from spreadsheet screen recordings and recommend improved
-                    workflows; and <a href="https://dl.acm.org/doi/full/10.1145/3613904.3642239">Ivie</a>, which
-                    provides lightweight in-situ explanations for AI-generated code.
-                    <br><br>
-                    I completed my master's in Computational Science and Engineering at Harvard, advised by <a
-                        href="https://glassmanlab.seas.harvard.edu">Prof. Elena Glassman</a>, where I developed
-                    interactive systems for code and model exploration, including <a
-                        href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">ExampleNet</a> and <a
-                        href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647">ParaLib</a>.
-                </p>
-            </div>
+  </header>
+  <main class="site">
+    <section class="intro" id="about" style="margin-top:0">
+      <img class="portrait" src="./images/litao.png" alt="Litao Yan">
+      <div class="bio">
+        <h1 class="hello">Hi, I'm Litao.</h1>
+        <p>I am a Ph.D. candidate in Computer and Information Science at the University of Pennsylvania, advised by <a
+            href="https://andrewhead.info">Andrew Head</a>. I expect to graduate in May 2027. I am currently <strong>on
+            the job market</strong> for research and engineering roles starting in 2027.</p>
+        <p>My research lies at the intersection of <strong>AI agents, developer tools, and AI evaluation</strong>. I
+          build AI systems with new agent architectures and interaction techniques for understanding and inspecting
+          AI-generated work, particularly in AI-assisted programming. I also develop task datasets and benchmarks to
+          evaluate these systems through technical validation and studies of human understanding and use.</p>
+        <p>I have also worked on <strong>multi-agent systems and agent evaluation at Adobe Research</strong>, and
+          <strong>multimodal AI systems at Microsoft Research</strong>. Previously, I received my M.E. in Computational
+          Science and Engineering from Harvard University, where I worked with <a
+            href="https://glassmanlab.seas.harvard.edu">Elena Glassman</a> on <a
+            href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">ExampleNet</a>, which received a CHI Honorable
+          Mention Award.</p>
+        <div class="links">
+          <a href="mailto:ltyan@engineering.upenn.edu"><i class="fas fa-envelope"></i> Email</a>
+          <a href="Litao_Yan_CV.pdf"><i class="fas fa-file-alt"></i> CV</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=b3GRi9kAAAAJ"><i class="ai ai-google-scholar"></i>
+            Scholar</a>
+          <a href="https://github.com/YanLitao"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/litao-yan"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
-    </div>
-    <div id="publi">
-        <div class="w">
-            <h1>Publications</h1>
-            <div class="research">
-                <div class="research-img">
-                    <div id="invisiblementor"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/epdf/10.1145/3772318.3790294">
-                            The Invisible Mentor: Inferring User Actions from Screen Recordings to Recommend Better
-                            Workflows
-                        </a>
-                    </h4>
-                    <p>
-                        <b>Litao Yan</b>, <a href="https://andrewhead.info" class="a-aut">Andrew Head</a>, Ken Milne, Vu
-                        Le, Sumit Gulwani, Chris Parnin, Emerson Murphy-Hill
-                        <br>
-                        CHI'26
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="https://dl.acm.org/doi/epdf/10.1145/3772318.3790294">PDF</a>&nbsp&nbsp&nbsp
-                </div>
-            </div>
-            <div class="research">
-                <div class="research-img">
-                    <div id="trailblazer"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/full/10.1145/3746059.3747652">
-                            Answering Developer Questions with Annotated Agent-Discovered Program Traces
-                        </a>
-                    </h4>
-                    <p>
-                        <b>Litao Yan</b>, <a href="https://www.speculative.tech" class="a-aut">Jeffrey Tao</a>, <a
-                            href="https://www.cs.columbia.edu/~chilton/chilton.html" class="a-aut">Lydia B Chilton</a>,
-                        <a href="https://andrewhead.info" class="a-aut">Andrew Head</a>
-                        <br>
-                        UIST'25
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3746059.3747652">PDF</a>&nbsp&nbsp&nbsp
-                </div>
-            </div>
+      </div>
+    </section>
 
-            <div class="research">
-                <div class="research-img">
-                    <div id="freeform"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/abs/10.1145/3706598.3714288">
-                            FreeForm: Flexibly Augmenting Formulas with Synchronized Markup and Graphical Edits
-                        </a>
-                    </h4>
-                    <p>
-                        <a href="https://www.speculative.tech" class="a-aut">Jeffrey Tao</a>, <b>Litao Yan</b>, <a
-                            href="https://jwshii.github.io" class="a-aut">Jessica Shi</a>, Mia Ginsberg, <a
-                            href="https://andrewhead.info" class="a-aut">Andrew Head</a>
-                        <br>
-                        CHI'25
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="https://andrewhead.info/assets/pdf/freeform.pdf">PDF</a>&nbsp&nbsp&nbsp
-                </div>
-            </div>
-            <div class="research">
-                <div class="research-img">
-                    <div id="Ivie"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/full/10.1145/3613904.3642239">
-                            Ivie: Lightweight Anchored Explanations of Just-Generated Code
-                        </a>
-                    </h4>
-                    <p>
-                        <b>Litao Yan</b>, <a href="https://alyssahwang.com" class="a-aut">Alyssa Hwang</a>, Zhiyuan Wu,
-                        <a href="https://andrewhead.info" class="a-aut">Andrew Head</a>
-                        <br>
-                        CHI'24
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642239">PDF</a>&nbsp&nbsp&nbsp
-                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
-                    <a href="https://youtu.be/QPTtC92kr08?si=kbRCZB92ns2r7_Da">Video</a>&nbsp&nbsp&nbsp
-                </div>
-            </div>
-            <div class="research">
-                <div class="research-img">
-                    <div id="paralib"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647">
-                            Concept-Annotated Examples for Library Comparison
-                        </a>
-                    </h4>
-                    <p>
-                        <b>Litao Yan</b>, <a href="http://web.cs.ucla.edu/~miryung/" class="a-aut">Miryung Kim</a>, <a
-                            href="https://people.eecs.berkeley.edu/~bjoern/" class="a-aut">Björn Hartmann</a>, <a
-                            href="https://tianyi-zhang.github.io" class="a-aut">Tianyi Zhang</a>, <a
-                            href="https://glassmanlab.seas.harvard.edu" class="a-aut">Elena Glassman</a>
-                        <br>
-                        UIST'22
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="./papers/paralib.pdf">PDF</a>&nbsp&nbsp&nbsp
-                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
-                    <a href="https://youtu.be/IAwxNB9qHbg?si=5nouuPZPwRcWVwuk">Video</a>&nbsp&nbsp&nbsp
-                </div>
-            </div>
-            <div class="research">
-                <div class="research-img">
-                    <div id="examplenet"></div>
-                </div>
-                <div class="project_div">
-                    <h4>
-                        <a class="paper_title" href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">
-                            Visualizing Examples of Deep Neural Networks at Scale
-                        </a>
-                    </h4>
-                    <i class="fas fa-award" style="color: #96A2DF; font-size: 20px;"></i>
-                    <p class="award"> CHI 2021 Honorable Mention</p>
-                    <p>
-                        <b>Litao Yan</b>, <a href="https://glassmanlab.seas.harvard.edu" class="a-aut">Elena
-                            Glassman</a>, <a href="https://tianyi-zhang.github.io" class="a-aut">Tianyi Zhang</a>
-                        <br>
-                        CHI'21
-                        <br>
-                    </p>
-                    <i class="fas fa-file-pdf" style="color: #3E73BB;"></i>
-                    <a href="./papers/exampleNet.pdf">PDF</a>&nbsp&nbsp&nbsp
-                    <i class="fas fa-file-video"" style=" color: #3E73BB;"></i>
-                    <a href="https://youtu.be/kU8cBy-0z7Q?si=UqPh1PLJxpaMg1RR">Video</a>&nbsp&nbsp&nbsp
-                    <i class="fas fa-file-powerpoint" style="color: #3E73BB;"></i>
-                    <a href="./other/CHI2021_ExampleNet.pdf">Slides</a>
-                </div>
-            </div>
+    <section id="news">
+      <h2>News</h2>
+      <div class="news">
+        <time>Sep 2026</time>
+        <div>Submitted our latest work on execution-grounded review of AI-generated code to CHI 2027.</div>
+        <time>Aug 2026</time>
+        <div>Finished my research internship with the Evaluation and Experience Lab at Adobe.</div>
+        <time>Apr 2026</time>
+        <div><a href="https://dl.acm.org/doi/epdf/10.1145/3772318.3790294">InvisibleMentor</a> was accepted to CHI 2026.
         </div>
-    </div>
-    <div id="footer">
-        <div class="w">
-            <div class="logo">
-                Litao Yan
-            </div>
-            <div class="icons">
-                <a href="https://github.com/YanLitao">
-                    <i class="footer-icons fab fa-github"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?hl=en&user=b3GRi9kAAAAJ">
-                    <i class="footer-icons ai ai-google-scholar-square ai-3x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/litao-yan">
-                    <i class="footer-icons fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/litao_yan">
-                    <i class="footer-icons fab fa-twitter-square"></i>
-                </a>
-            </div>
+        <time>Sep 2025</time>
+        <div><a href="https://dl.acm.org/doi/full/10.1145/3746059.3747652">Trailblazer</a> was presented at UIST 2025.
         </div>
-    </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="pub-list">
+        <article class="pub">
+          <div class="thumb">
+            <div id="execution-digests"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Revealing Program Behavior with Execution Digests</h3>
+            <p class="authors"><strong>Litao Yan</strong>, Jeffrey Tao, Daniel Fried, Andrew Head</p>
+            <p class="venue">Under review</p>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="invisiblementor"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/epdf/10.1145/3772318.3790294">The Invisible Mentor:
+                Inferring User Actions from Screen Recordings to Recommend Better Workflows</a></h3>
+            <p class="authors"><strong>Litao Yan</strong>, Andrew Head, Ken Milne, Vu Le, Sumit Gulwani, Chris Parnin,
+              Emerson Murphy-Hill</p>
+            <p class="venue">CHI 2026</p>
+            <div class="paper-links"><a href="https://dl.acm.org/doi/epdf/10.1145/3772318.3790294">PDF</a></div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="trailblazer"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3746059.3747652">Answering Developer
+                Questions with Annotated Agent-Discovered Program Traces</a></h3>
+            <p class="authors"><strong>Litao Yan</strong>, Jeffrey Tao, Lydia B. Chilton, Andrew Head</p>
+            <p class="venue">UIST 2025</p>
+            <div class="paper-links"><a href="https://dl.acm.org/doi/pdf/10.1145/3746059.3747652">PDF</a></div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="freeform"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3706598.3714288">FreeForm: Flexibly
+                Augmenting Formulas with Synchronized Markup and Graphical Edits</a></h3>
+            <p class="authors">Jeffrey Tao, <strong>Litao Yan</strong>, Jessica Shi, Mia Ginsberg, Andrew Head</p>
+            <p class="venue">CHI 2025</p>
+            <div class="paper-links"><a href="https://andrewhead.info/assets/pdf/freeform.pdf">PDF</a></div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="Ivie"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3613904.3642239">Ivie: Lightweight
+                Anchored Explanations of Just-Generated Code</a></h3>
+            <p class="authors"><strong>Litao Yan</strong>, Alyssa Hwang, Zhiyuan Wu, Andrew Head</p>
+            <p class="venue">CHI 2024</p>
+            <div class="paper-links"><a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642239">PDF</a><a
+                href="https://youtu.be/QPTtC92kr08?si=kbRCZB92ns2r7_Da">Video</a></div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="paralib"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3526113.3545647">Concept-Annotated
+                Examples for Library Comparison</a></h3>
+            <p class="authors"><strong>Litao Yan</strong>, Miryung Kim, Björn Hartmann, Tianyi Zhang, Elena Glassman</p>
+            <p class="venue">UIST 2022</p>
+            <div class="paper-links"><a href="./papers/paralib.pdf">PDF</a><a
+                href="https://youtu.be/IAwxNB9qHbg?si=5nouuPZPwRcWVwuk">Video</a></div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="thumb">
+            <div id="examplenet"></div>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3411764.3445654">Visualizing Examples of
+                Deep Neural Networks at Scale</a></h3>
+            <p class="award">CHI 2021 · Honorable Mention Award</p>
+            <p class="authors"><strong>Litao Yan</strong>, Elena Glassman, Tianyi Zhang</p>
+            <p class="venue">CHI 2021</p>
+            <div class="paper-links"><a href="./papers/exampleNet.pdf">PDF</a><a
+                href="https://youtu.be/kU8cBy-0z7Q?si=UqPh1PLJxpaMg1RR">Video</a><a
+                href="./other/CHI2021_ExampleNet.pdf">Slides</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="site">© 2026 Litao Yan</div>
+  </footer>
 </body>
-
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.topnav .w .nav');
-
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-
-    // Hide nav when clicking outside or on a link inside it
-    document.addEventListener('click', (event) => {
-        if (!nav.contains(event.target) && event.target !== hamburger) {
-            nav.classList.remove('active');
-        }
-    });
-
-    // Hide nav when clicking on a link inside it
-    nav.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A') {
-            nav.classList.remove('active');
-        }
-    });
-</script>
 
 </html>
